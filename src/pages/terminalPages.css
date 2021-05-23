@@ -1,0 +1,55 @@
+html,
+body {
+  background-color: #111;
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "image text text text"
+    "footer footer footer footer";
+  column-gap: 5vw;
+}
+
+@media (max-width: 700px) {
+  .aboutContainer {
+    grid-template-areas:
+      "header header header header"
+      "image image image image"
+      "text text text text"
+      "footer footer footer footer";
+  }
+
+  .aboutImageImage {
+    max-height: 30vh;
+    width: auto;
+  }
+
+  .aboutImage {
+    grid-area: image;
+    max-height: 30vh;
+  }
+}
+
+.aboutImageImage {
+  display: grid;
+
+  object-fit: contain;
+  margin: auto;
+}
+
+.aboutHeader {
+  grid-area: header;
+}
+
+.aboutImage {
+  grid-area: image;
+}
+
+.aboutText {
+  grid-area: text;
+}

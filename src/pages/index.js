@@ -14,51 +14,52 @@ import Header from "../components/header"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1 style={{ marginBottom: 0 }}>Krzysztof_Pantak@_Dev:</h1>
-    <div style={{ display: "inline-flex" }}>
-      <h1>$:</h1>
-      <h1>
-        <Typewriter
-          options={{
-            autoStart: true,
-            loop: true,
-            strings: [
-              "Software Developer",
-              "MERN Stack Developer",
-              "Computer Science Student",
-            ],
-            deleteSpeed: "natural",
-          }}
-        />
-      </h1>
-    </div>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ display: "inline-flex", width: 500 }}>
-      <p style={{ width: "50%", display: "inline-block" }}>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-      </p>
-      <a
-        style={{ cursor: "pointer" }}
-        onClick={() => {
-          new WinBox({
-            title: "About Me",
-            // modal: true,
 
-            modal: true,
-            onfocus: function () {
-              this.setBackground("#00aa00")
-            },
-            onblur: function () {
-              this.setBackground("#777")
-            },
-            url: "/404/",
-          })
-        }}
-      >
-        /About
-      </a>
+    <div className="container">
+      <h1 style={{ marginBottom: 0 }}>Krzysztof_Pantak@_Dev:</h1>
+      <div style={{ display: "inline-flex" }}>
+        <h1>$:</h1>
+        <h1>
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+              strings: [
+                "Software Developer",
+                "MERN Stack Developer",
+                "Computer Science Student",
+              ],
+              deleteSpeed: "natural",
+            }}
+          />
+        </h1>
+      </div>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+      <div style={{ display: "inline-flex", width: 500 }}>
+        <p style={{ width: "50%", display: "inline-block" }}>
+          <Link to="/page-2/">Go to page 2</Link> <br />
+          <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+        </p>
+        <a
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            new WinBox({
+              title: "About Me",
+              modal: false,
+              onfocus: function () {
+                this.setBackground("#00aa00")
+              },
+              onblur: function () {
+                this.setBackground("#777")
+              },
+              url: "/about",
+            })
+          }}
+        >
+          /About
+        </a>
+      </div>
     </div>
   </Layout>
 )

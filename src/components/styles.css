@@ -14,6 +14,8 @@ body {
   color: #ccc;
   font-size: 18px;
   line-height: 1.6;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -60,18 +62,13 @@ nav ul li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 80vw;
   margin: auto;
   height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.wb-body {
-  background: #111;
-  padding: 20px;
+  justify-content: left;
+  align-items: left;
 }
 
 .hidden {
