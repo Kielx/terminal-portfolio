@@ -91,15 +91,6 @@ nav ul li {
   }
 }
 
-footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
-  margin: 1rem;
-}
-
 @media (max-width: 1200px) {
   legend {
     font-size: calc(1.275rem + 0.3vw);
@@ -135,4 +126,23 @@ footer {
   .close {
     font-size: calc(1.275rem + 0.3vw);
   }
+}
+
+.mainContainer {
+  min-height: 100vh;
+  margin: 0;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  min-height: 50px;
+  margin-left: 10vw;
+  margin-top: 2vh;
+}
+
+footer {
+  background: #00aa00;
+  max-height: 5vh;
 }

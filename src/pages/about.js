@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Typewriter from "typewriter-effect"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Seo from "../components/seo"
 
 import "./terminalPages.css"
 
 const about = () => (
-  <Layout>
+  <>
     <Seo title="About Me" />
 
     <div className="aboutContainer">
@@ -34,7 +34,7 @@ const about = () => (
         Strength Coach and a family man. Based in 🇵🇱 Poland.
       </p>
     </div>
-  </Layout>
+  </>
 )
 
 export default about

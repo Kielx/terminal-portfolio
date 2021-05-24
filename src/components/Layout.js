@@ -13,32 +13,16 @@ import Header from "./header"
 import "./styles.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-
+    <div className="mainContainer">
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()} Krzysztof Pantak, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>
-    </>
+    </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

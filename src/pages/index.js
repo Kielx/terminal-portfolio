@@ -1,39 +1,20 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Typewriter from "typewriter-effect"
 
 //importing winbox https://github.com/nextapps-de/winbox/issues/1
 import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
 
-import Layout from "../components/layout"
+import MainLayout from "../components/MainLayout"
 import Seo from "../components/seo"
 import Header from "../components/header"
 
 const IndexPage = () => (
-  <Layout>
+  <MainLayout>
     <Seo title="Home" />
 
     <div className="container">
-      <h1 style={{ marginBottom: 0 }}>Krzysztof_Pantak@_Dev:</h1>
-      <div style={{ display: "inline-flex" }}>
-        <h1>$:</h1>
-        <h1>
-          <Typewriter
-            options={{
-              autoStart: true,
-              loop: true,
-              strings: [
-                "Software Developer",
-                "MERN Stack Developer",
-                "Computer Science Student",
-              ],
-              deleteSpeed: "natural",
-            }}
-          />
-        </h1>
-      </div>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
       <div style={{ display: "inline-flex", width: 500 }}>
@@ -47,6 +28,8 @@ const IndexPage = () => (
             new WinBox({
               title: "About Me",
               modal: false,
+              x: "20%",
+              y: "20%",
               onfocus: function () {
                 this.setBackground("#00aa00")
               },
@@ -61,7 +44,7 @@ const IndexPage = () => (
         </a>
       </div>
     </div>
-  </Layout>
+  </MainLayout>
 )
 
 export default IndexPage

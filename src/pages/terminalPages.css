@@ -5,7 +5,7 @@ body {
 
 .aboutContainer {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: auto 1fr auto;
   padding: 2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
