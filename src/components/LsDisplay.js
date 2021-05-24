@@ -86,8 +86,18 @@ const LsDisplay = () => {
       <div className="LsDisplayTaskbar" style={{ width: "100%", padding: 5 }}>
         Cmd
       </div>
-      <h3 style={{ padding: 5, marginBottom: 0 }}>
-        {"C:/Users/Krzysztof Pantak>"}
+      <h3
+        style={{
+          padding: 5,
+          marginBottom: 0,
+          display: "inline-flex",
+          flexWrap: "wrap",
+          whiteSpace: "pre-wrap",
+        }}
+      >
+        {"C:/Users/Krzysztof Pantak"}
+        <div className="break"></div>
+        {"> "}
         {TypeWriter}
       </h3>
       <p style={{ padding: 5, margin: 0 }}>{items}</p>

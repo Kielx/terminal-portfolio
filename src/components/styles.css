@@ -8,6 +8,11 @@
   --text-color: #00aa00;
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 body {
   font-family: "Roboto Mono", sans-serif;
   background-color: #333;
