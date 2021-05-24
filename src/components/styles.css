@@ -146,3 +146,19 @@ footer {
   background: #00aa00;
   max-height: 5vh;
 }
+
+.LsDisplayTaskbar {
+  background-color: #ccc;
+  color: #111;
+}
+
+.LsDisplayWindow:hover > .LsDisplayTaskbar {
+  background-color: #00aa00;
+  color: #ccc;
+}
+
+.LsDisplayWindow {
+  width: auto;
+  justify-content: flex-start;
+  min-height: 60vh;
+}

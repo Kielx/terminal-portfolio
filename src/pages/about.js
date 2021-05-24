@@ -16,7 +16,12 @@ const about = () => (
       <h1 className="aboutHeader">
         <Typewriter
           onInit={typewriter => {
-            typewriter.typeString("About me").start()
+            typewriter
+              .typeString("About me")
+              .start()
+              .callFunction(function (state) {
+                state.elements.cursor.style.display = "none"
+              })
           }}
         />
       </h1>
