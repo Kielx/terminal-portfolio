@@ -18,7 +18,7 @@ const about = () => {
           <Typewriter
             onInit={typewriter => {
               typewriter
-                .typeString("About me")
+                .typeString("Expenses Analyzer")
                 .start()
                 .callFunction(function (state) {
                   state.elements.cursor.style.display = "none"
@@ -27,17 +27,17 @@ const about = () => {
           />
         </h1>
         <StaticImage
-          src="../images/mojephotoASCII.png"
-          alt="My ASCII Photo"
+          src="../images/expenses-analyzer-ascii.png"
+          alt="Expenses Analyzer icon in ASCII"
           className="aboutImage"
           imgClassName="aboutImageImage"
           imgStyle={{ margin: "auto" }}
         ></StaticImage>
 
         <p className="aboutText">
-          Software Developer currently working on finishing my CS Degree while
-          also being a Law Enforcer, EULEX Peacekeeping Mission in Kosovo
-          Veteran, Strength Coach and a family man. Based in 🇵🇱 Poland.
+          Expenses analyzer is a React-based app, that allows the user to
+          analyze bank statements from (at the moment) polish Mbank bank
+          accounts.
         </p>
       </div>
     </div>

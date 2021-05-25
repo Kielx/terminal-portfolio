@@ -10,7 +10,7 @@ const LsDisplay = () => {
   const [items, setItems] = useState("")
 
   const itemsList = (
-    <ul>
+    <ul style={{ lineHeight: 1.8 }}>
       <li>
         <a
           style={{ cursor: "pointer" }}
@@ -32,6 +32,31 @@ const LsDisplay = () => {
         >
           /About
         </a>
+      </li>
+      <li style={{ marginLeft: 10, color: "#ccc" }}>
+        ↵ Projects
+        <ul style={{ marginLeft: 50 }}>
+          <a
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              new WinBox({
+                title: "Expenses Analyzer",
+                modal: false,
+                x: "20%",
+                y: "20%",
+                onfocus: function () {
+                  this.setBackground("#00aa00")
+                },
+                onblur: function () {
+                  this.setBackground("#777")
+                },
+                url: "/expenses-analyzer",
+              })
+            }}
+          >
+            - 📈 Expenses analyzer
+          </a>
+        </ul>
       </li>
       <li>
         <a
@@ -63,7 +88,6 @@ const LsDisplay = () => {
       options={{ cursor: typeWriterCursor }}
       onInit={typewriter => {
         typewriter
-          .pauseFor(1000)
           .typeString("dir")
           .pauseFor(100)
           .callFunction(() => {
