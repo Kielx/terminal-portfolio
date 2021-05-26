@@ -105,7 +105,7 @@ const LsDisplay = () => {
     <div
       className="LsDisplayWindow"
       tabindex="0"
-      style={{ backgroundColor: "#111", border: "1px solid #ccc" }}
+      style={{ backgroundColor: "#111" }}
     >
       <div className="LsDisplayTaskbar" style={{ width: "100%", padding: 5 }}>
         Cmd
