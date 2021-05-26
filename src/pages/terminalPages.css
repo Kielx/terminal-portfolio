@@ -27,6 +27,7 @@ body {
   .aboutImageImage {
     max-height: 30vh;
     width: auto;
+    object-fit: contain;
   }
 
   .aboutImage {
@@ -38,7 +39,7 @@ body {
 .aboutImageImage {
   display: grid;
 
-  object-fit: contain;
+  object-fit: contain !important;
   margin: auto;
 }
 
