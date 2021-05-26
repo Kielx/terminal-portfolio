@@ -9,6 +9,10 @@ const LsDisplay = () => {
   const [typeWriterCursor, setTypeWriterCursor] = useState("|")
   const [items, setItems] = useState("")
 
+  const checkScreenWidth = () => {
+    return window.screen.width > 1000 ? "50%" : "100%"
+  }
+
   const itemsList = (
     <ul style={{ lineHeight: 1.8 }}>
       <li>
@@ -42,8 +46,11 @@ const LsDisplay = () => {
               new WinBox({
                 title: "Expenses Analyzer",
                 modal: false,
-                x: "20%",
-                y: "20%",
+                width: checkScreenWidth(),
+                height: checkScreenWidth(),
+                x: "center",
+                y: "center",
+
                 onfocus: function () {
                   this.setBackground("#00aa00")
                 },
