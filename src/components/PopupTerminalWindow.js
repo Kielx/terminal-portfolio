@@ -1,5 +1,4 @@
 import React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Typewriter from "typewriter-effect"
 
 import "../pages/terminalPages.css"

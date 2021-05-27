@@ -32,7 +32,7 @@ export default function ItemsList() {
 
   const listItems = myItems.map(item => (
     <li>
-      <a
+      <button
         style={{ cursor: "pointer" }}
         onClick={() => {
           const win = new WinBox({
@@ -60,7 +60,7 @@ export default function ItemsList() {
         }}
       >
         {item.listName}
-      </a>
+      </button>
     </li>
   ))
 
