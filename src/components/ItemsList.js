@@ -33,6 +33,7 @@ export default function ItemsList() {
   const listItems = myItems.map(item => (
     <li>
       <button
+        className="popupWindowLinkButton"
         style={{ cursor: "pointer" }}
         onClick={() => {
           const win = new WinBox({
