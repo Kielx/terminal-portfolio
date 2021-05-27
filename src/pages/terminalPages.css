@@ -1,9 +1,9 @@
 html,
 body {
-  background-color: #111;
+  background-color: #333;
 }
 
-.aboutContainer {
+.popupTerminaWindowContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 2rem;
@@ -16,41 +16,27 @@ body {
 }
 
 @media (max-width: 700px) {
-  .aboutContainer {
+  .popupTerminaWindowContainer {
     grid-template-areas:
       "header header header header"
       "image image image image"
       "text text text text"
       "footer footer footer footer";
   }
-
-  .aboutImageImage {
-    max-height: 30vh;
-    width: auto;
-    object-fit: contain;
-  }
-
-  .aboutImage {
-    grid-area: image;
-    max-height: 30vh;
-  }
 }
 
-.aboutImageImage {
+.popupTerminaWindowImage {
   display: grid;
-
+  grid-area: image;
+  max-height: 30vh;
   object-fit: contain !important;
   margin: auto;
 }
 
-.aboutHeader {
+.popupTerminaWindowHeader {
   grid-area: header;
 }
 
-.aboutImage {
-  grid-area: image;
-}
-
-.aboutText {
+.popupTerminaWindowText {
   grid-area: text;
 }

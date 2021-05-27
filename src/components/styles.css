@@ -13,6 +13,10 @@
   height: 0;
 }
 
+.wb-body {
+  background-color: #111 !important;
+}
+
 body {
   font-family: "Roboto Mono", sans-serif;
   background-color: #333;

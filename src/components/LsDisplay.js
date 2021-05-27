@@ -1,16 +1,19 @@
 import React, { useState } from "react"
+import ReactDOM from "react-dom"
 import Typewriter from "typewriter-effect"
 
 //importing winbox https://github.com/nextapps-de/winbox/issues/1
 import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
+import PopupTerminalWindow from "../components/PopupTerminalWindow"
+import "./styles.css"
 
 const LsDisplay = () => {
   const [typeWriterCursor, setTypeWriterCursor] = useState("|")
   const [items, setItems] = useState("")
 
   const checkScreenWidth = () => {
-    return window.screen.width > 1000 ? "50%" : "100%"
+    return window.screen.width > 1000 ? "60%" : "100%"
   }
 
   const itemsList = (
@@ -85,6 +88,38 @@ const LsDisplay = () => {
           }}
         >
           /404
+        </a>
+      </li>
+      <li>
+        <a
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            const win = new WinBox({
+              width: checkScreenWidth(),
+              height: checkScreenWidth(),
+              x: "center",
+              y: "center",
+              modal: true,
+              onfocus: function () {
+                this.setBackground("#00aa00")
+              },
+              onblur: function () {
+                this.setBackground("#777")
+              },
+            })
+            ReactDOM.render(
+              React.createElement(PopupTerminalWindow, {
+                popupHeader: "About me",
+                popupImageSrc: "mojephotoASCII.png",
+                popupImageAlt: "Photo of myself rendered with ASCII characters",
+                popupText:
+                  "Software Developer currently working on finishing my CS Degree while also being a Law Enforcer, EULEX Peacekeeping Mission in Kosovo Veteran, Strength Coach and a family man. Based in 🇵🇱 Poland.",
+              }),
+              win.body
+            )
+          }}
+        >
+          /About
         </a>
       </li>
     </ul>
