@@ -211,3 +211,11 @@ footer {
     outline-width: 1px;
   }
 }
+
+.projects {
+  margin-left: 10px;
+}
+
+.projects-items {
+  margin-left: 20px;
+}
