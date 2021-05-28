@@ -3,26 +3,22 @@ body {
   background-color: #333;
 }
 
+:root {
+  --text-color: #00aa00;
+}
+
 .popupTerminaWindowContainer {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding: 2rem;
+  padding-left: 2vw;
+  grid-template-rows: auto 1fr auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header"
     "image text text text"
+    "linkIcons text text text"
     "footer footer footer footer";
   column-gap: 5vw;
-}
-
-@media (max-width: 700px) {
-  .popupTerminaWindowContainer {
-    grid-template-areas:
-      "header header header header"
-      "image image image image"
-      "text text text text"
-      "footer footer footer footer";
-  }
+  row-gap: 2vh;
 }
 
 .popupTerminaWindowImage {
@@ -39,4 +35,40 @@ body {
 
 .popupTerminaWindowText {
   grid-area: text;
+}
+
+.popupTerminalWindowLinkIcons {
+  grid-area: linkIcons;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popupTerminalWindowLinkIcon {
+  color: #00aa00;
+  transition: color 0.5s ease-in-out;
+}
+
+.popupTerminalWindowLinkIcon:hover {
+  color: rgb(45, 117, 175);
+}
+
+@media (max-width: 700px) {
+  .popupTerminaWindowContainer {
+    grid-template-areas:
+      "header header header header"
+      "image image image image"
+      "linkIcons linkIcons linkIcons linkIcons"
+      "text text text text"
+      "footer footer footer footer";
+  }
+
+  .popupTerminalWindowLinkIcons {
+    justify-content: center;
+    align-items: center;
+  }
+  .popupTerminalWindowLinkIcon {
+    margin-inline: 2vw;
+    transition: color 0.5s ease-in-out;
+  }
 }
