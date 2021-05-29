@@ -9,14 +9,13 @@ body {
 
 .popupTerminaWindowContainer {
   display: grid;
-
-  grid-template-rows: auto 1fr auto auto auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header"
     "image text text text"
-    "linkIcons text text text"
-    "footer footer footer footer";
+    "linkIcons footer footer footer";
+
   column-gap: 5vw;
   row-gap: 2vh;
 }
@@ -37,6 +36,19 @@ body {
   grid-area: text;
 }
 
+.popupTerminalWindowFooter {
+  grid-area: footer;
+}
+
+.techItemsList {
+  display: inline-flex;
+  list-style: none;
+}
+
+.techItemsList > li {
+  padding-inline: 0.3rem;
+}
+
 .popupTerminalWindowLinkIcons {
   grid-area: linkIcons;
   display: flex;
@@ -55,6 +67,11 @@ body {
 
 .mappedItemsList {
   margin-left: 15px;
+}
+
+.svgIcon {
+  fill: #ccc;
+  width: 2rem;
 }
 
 @media (max-width: 700px) {
