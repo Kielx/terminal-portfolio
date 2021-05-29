@@ -22,10 +22,10 @@ module.exports = {
         name: `Krzysztof Pantak Portfolio`,
         short_name: `Kielx Portfolio`,
         start_url: `/`,
-        background_color: `#00aa00`,
-        theme_color: `#00aa00`,
+        background_color: `#333`,
+        theme_color: `#333`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mojephotoASCII.png`, // This path is relative to the root of the site.
       },
     },
     {
