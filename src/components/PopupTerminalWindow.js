@@ -48,21 +48,23 @@ export default function PopupTerminalWindow({
             }}
           />
         </h1>
-        {(link = popupLiveLink || popupGithubLink) ? (
-          <a href={link}>
+        <div className="popupTerminalWindowImageContainer">
+          {(link = popupLiveLink || popupGithubLink) ? (
+            <a href={link}>
+              <img
+                src={`${popupImageSrc}`}
+                className="popupTerminaWindowImage"
+                alt={popupImageAlt}
+              ></img>
+            </a>
+          ) : (
             <img
               src={`${popupImageSrc}`}
               className="popupTerminaWindowImage"
               alt={popupImageAlt}
             ></img>
-          </a>
-        ) : (
-          <img
-            src={`${popupImageSrc}`}
-            className="popupTerminaWindowImage"
-            alt={popupImageAlt}
-          ></img>
-        )}
+          )}
+        </div>
 
         {popupGithubLink || popupLiveLink ? (
           <div className="popupTerminalWindowLinkIcons">

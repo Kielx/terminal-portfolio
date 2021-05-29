@@ -9,21 +9,26 @@ body {
 
 .popupTerminaWindowContainer {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header"
     "image text text text"
     "linkIcons footer footer footer";
 
-  column-gap: 5vw;
+  column-gap: 2vw;
   row-gap: 2vh;
 }
 
-.popupTerminaWindowImage {
+.popupTerminalWindowImageContainer {
   display: grid;
   grid-area: image;
-  max-height: 30vh;
+  place-items: center center;
+  place-self: center center;
+}
+.popupTerminaWindowImage {
+  width: 100%;
+  height: auto;
   object-fit: contain !important;
   margin: auto;
 }
@@ -82,6 +87,10 @@ body {
       "linkIcons linkIcons linkIcons linkIcons"
       "text text text text"
       "footer footer footer footer";
+  }
+
+  .popupTerminalWindowImage {
+    width: 60%;
   }
 
   .popupTerminalWindowLinkIcons {
