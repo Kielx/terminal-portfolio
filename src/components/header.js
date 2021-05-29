@@ -4,7 +4,6 @@ import Typewriter from "typewriter-effect"
 
 const Header = ({ siteTitle }) => (
   <header>
-    {/* <h1 style={{ marginBottom: 0, lineHeight: 1 }}>Krzysztof_Pantak@_Dev:$</h1> */}
     <div style={{ display: "inline-flex" }}>
       <h1>{">"}</h1>
       <h1>
@@ -20,10 +19,13 @@ const Header = ({ siteTitle }) => (
               .typeString("Software Developer")
               .pauseFor(2500)
               .deleteAll()
-              .typeString("MERN Stack Developer")
+              .typeString("Problem solver")
               .pauseFor(2500)
               .deleteAll()
-              .typeString("Computer Science Student")
+              .typeString("Creator")
+              .pauseFor(2500)
+              .deleteAll()
+              .typeString("Krzysztof Pantak")
               .pauseFor(2500)
               .deleteAll()
               .start()

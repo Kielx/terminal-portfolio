@@ -9,7 +9,7 @@ body {
 
 .popupTerminaWindowContainer {
   display: grid;
-  padding-left: 2vw;
+
   grid-template-rows: auto 1fr auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -51,6 +51,10 @@ body {
 
 .popupTerminalWindowLinkIcon:hover {
   color: rgb(45, 117, 175);
+}
+
+.mappedItemsList {
+  margin-left: 15px;
 }
 
 @media (max-width: 700px) {

@@ -31,7 +31,7 @@ const LsDisplay = () => {
       </div>
       <h3
         style={{
-          padding: 5,
+          padding: 10,
           marginBottom: 0,
           display: "inline-flex",
           flexWrap: "wrap",

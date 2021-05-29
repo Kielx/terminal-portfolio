@@ -98,5 +98,5 @@ export default function ItemsList() {
     )
   )
 
-  return <ul>{listItems}</ul>
+  return <ul className="mappedItemsList">{listItems}</ul>
 }
