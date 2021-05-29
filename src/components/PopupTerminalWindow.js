@@ -98,16 +98,20 @@ export default function PopupTerminalWindow({
         ) : (
           ""
         )}
-
-        <p className="popupTerminaWindowText">{popupText}</p>
-        {techIcons ? (
-          <div className="popupTerminalWindowFooter">
-            <h4>Tech used:</h4>
-            <ul className="techItemsList">{techIcons}</ul>
-          </div>
-        ) : (
-          ""
-        )}
+        <div className="popupTerminaWindowTextContainer">
+          <p className="popupTerminaWindowText">{popupText}</p>
+          {techIcons ? (
+            <>
+              <div className="break"></div>
+              <div className="popupTerminalWindowFooter">
+                <h4>Tech used:</h4>
+                <ul className="techItemsList">{techIcons}</ul>
+              </div>
+            </>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   )

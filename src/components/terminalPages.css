@@ -14,7 +14,7 @@ body {
   grid-template-areas:
     "header header header header"
     "image text text text"
-    "linkIcons footer footer footer";
+    "linkIcons text text text";
 
   column-gap: 2vw;
   row-gap: 2vh;
@@ -37,7 +37,7 @@ body {
   grid-area: header;
 }
 
-.popupTerminaWindowText {
+.popupTerminaWindowTextContainer {
   grid-area: text;
 }
 
@@ -81,15 +81,19 @@ body {
 
 @media (max-width: 700px) {
   .popupTerminaWindowContainer {
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
       "header header header header"
       "image image image image"
       "linkIcons linkIcons linkIcons linkIcons"
-      "text text text text"
-      "footer footer footer footer";
+      "text text text text";
   }
 
-  .popupTerminalWindowImage {
+  .popupTerminaWindowImage {
+    width: 100%;
+  }
+
+  .popupTerminalWindowImageContainer > * {
     width: 60%;
   }
 
