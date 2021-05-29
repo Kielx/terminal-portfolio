@@ -24,6 +24,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "simple-icons": "^4.25.0",
     "typewriter-effect": "^2.17.0",
     "winbox": "^0.1.92"
   },

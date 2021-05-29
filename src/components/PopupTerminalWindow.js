@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
+import simpleIcons from "simple-icons"
 import "./terminalPages.css"
 
 export default function PopupTerminalWindow({
@@ -12,7 +13,26 @@ export default function PopupTerminalWindow({
   popupImageSrc,
   popupGithubLink,
   popupLiveLink,
+  techIcons,
 }) {
+  let link = ""
+  techIcons = techIcons?.map(icon =>
+    simpleIcons[icon]?.["title"] ? (
+      <li className="techItem">
+        <svg
+          className="svgIcon"
+          viewBox="0 0 25 25"
+          role="img"
+          alt={simpleIcons[icon]?.["title"]}
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path d={simpleIcons[icon]?.["path"]} />
+        </svg>
+      </li>
+    ) : (
+      ""
+    )
+  )
   return (
     <div>
       <div className="popupTerminaWindowContainer">
@@ -28,11 +48,24 @@ export default function PopupTerminalWindow({
             }}
           />
         </h1>
-        <img
-          src={`${popupImageSrc}`}
-          className="popupTerminaWindowImage"
-          alt={popupImageAlt}
-        ></img>
+        <div className="popupTerminalWindowImageContainer">
+          {(link = popupLiveLink || popupGithubLink) ? (
+            <a href={link}>
+              <img
+                src={`${popupImageSrc}`}
+                className="popupTerminaWindowImage"
+                alt={popupImageAlt}
+              ></img>
+            </a>
+          ) : (
+            <img
+              src={`${popupImageSrc}`}
+              className="popupTerminaWindowImage"
+              alt={popupImageAlt}
+            ></img>
+          )}
+        </div>
+
         {popupGithubLink || popupLiveLink ? (
           <div className="popupTerminalWindowLinkIcons">
             {popupLiveLink ? (
@@ -65,8 +98,20 @@ export default function PopupTerminalWindow({
         ) : (
           ""
         )}
-
-        <p className="popupTerminaWindowText">{popupText}</p>
+        <div className="popupTerminaWindowTextContainer">
+          <p className="popupTerminaWindowText">{popupText}</p>
+          {techIcons ? (
+            <>
+              <div className="break"></div>
+              <div className="popupTerminalWindowFooter">
+                <h4>Tech used:</h4>
+                <ul className="techItemsList">{techIcons}</ul>
+              </div>
+            </>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   )
