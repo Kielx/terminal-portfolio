@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Typewriter from "typewriter-effect"
 
 import ItemsList from "../components/ItemsList"
-import "./styles.css"
+import "../styles/styles.scss"
 
 const LsDisplay = () => {
   const [isLoaded, setIsLoaded] = useState(false)

@@ -1,11 +1,9 @@
+@import "variables";
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-:root {
-  --text-color: #00aa00;
 }
 
 .break {
@@ -14,14 +12,14 @@
 }
 
 .wb-body {
-  background-color: #111 !important;
+  background-color: $windowBackgroundColor !important;
   padding: 1rem;
 }
 
 body {
   font-family: "Roboto Mono", sans-serif;
-  background-color: #333;
-  color: #ccc;
+  background-color: $backgroundColor;
+  color: $secondaryTextColor;
   font-size: 18px;
   line-height: 1.6;
   width: 100%;
@@ -29,14 +27,14 @@ body {
 }
 
 h1 {
-  color: var(--text-color);
+  color: $primaryTextColor;
   font-size: 50px;
   letter-spacing: -2px;
   margin-bottom: 20px;
 }
 
 h2 {
-  color: var(--text-color);
+  color: $primaryTextColor;
 }
 
 h3 {
@@ -48,7 +46,7 @@ ul {
 }
 
 a {
-  color: var(--text-color);
+  color: $primaryTextColor;
   text-decoration: none;
 }
 
@@ -67,7 +65,7 @@ nav ul {
 }
 
 nav ul li {
-  color: var(--text-color);
+  color: $primaryTextColor;
   cursor: pointer;
 }
 
@@ -97,7 +95,7 @@ nav ul li {
   }
 
   50% {
-    color: var(--text-color);
+    color: $primaryTextColor;
   }
 }
 
@@ -153,18 +151,18 @@ header {
 }
 
 footer {
-  background: #00aa00;
+  background: $primaryTextColor;
   max-height: 5vh;
 }
 
 .LsDisplayTaskbar {
-  background-color: #ccc;
+  background-color: $secondaryTextColor;
   color: #111;
 }
 
 .LsDisplayWindow:hover > .LsDisplayTaskbar {
-  background-color: #00aa00;
-  color: #ccc;
+  background-color: $primaryTextColor;
+  color: $secondaryTextColor;
 }
 
 .LsDisplayWindow {
@@ -180,7 +178,7 @@ footer {
   border-color: rgb(0, 0, 238);
   border-style: none;
   box-sizing: content-box;
-  color: #00aa00;
+  color: $primaryTextColor;
   cursor: pointer;
   display: inline;
   font: inherit;

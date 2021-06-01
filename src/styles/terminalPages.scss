@@ -1,10 +1,8 @@
+@import "./variables";
+
 html,
 body {
-  background-color: #333;
-}
-
-:root {
-  --text-color: #00aa00;
+  background-color: $backgroundColor;
 }
 
 .popupTerminaWindowContainer {
@@ -62,12 +60,12 @@ body {
 }
 
 .popupTerminalWindowLinkIcon {
-  color: #00aa00;
+  color: $primaryTextColor;
   transition: color 0.5s ease-in-out;
 }
 
 .popupTerminalWindowLinkIcon:hover {
-  color: rgb(45, 117, 175);
+  color: $linkTextColor;
 }
 
 .mappedItemsList {
@@ -75,7 +73,7 @@ body {
 }
 
 .svgIcon {
-  fill: #ccc;
+  fill: $secondaryTextColor;
   width: 2rem;
 }
 
