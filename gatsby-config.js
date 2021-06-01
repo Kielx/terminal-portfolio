@@ -35,6 +35,7 @@ module.exports = {
         display: "swap",
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-split-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
