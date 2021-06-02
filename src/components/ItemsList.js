@@ -29,7 +29,7 @@ export default function ItemsList() {
         "Expenses analyzer is a React-based app, that allows the user to analyze bank statements from (at the moment) polish Mbank bank accounts.",
       popupGithubLink: "https://github.com/Kielx/expenses-analyzer",
       popupLiveLink: "https://kielx.github.io/expenses-analyzer/",
-      techIcons: ["GitHub"],
+      techIcons: ["React", "HTML5", "CSS3", "GitHub"],
     },
     {
       nameOfClass: "projects-items",
@@ -40,7 +40,7 @@ export default function ItemsList() {
       popupText:
         "This repository contains all of my coursework from second semester in C and C++ also including a project where I compare naive implementations of Timsort and Quicksort.",
       popupGithubLink: "https://github.com/Kielx/Politechnika",
-      techIcons: ["GitHub"],
+      techIcons: ["C++", "C", "GitHub"],
     },
     {
       nameOfClass: "projects-items",
