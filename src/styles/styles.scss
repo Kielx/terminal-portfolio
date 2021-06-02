@@ -72,7 +72,7 @@ nav ul li {
 .container {
   max-width: 80vw;
   margin: auto;
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -151,7 +151,7 @@ header {
 }
 
 footer {
-  background: $primaryTextColor;
+  background-color: $backgroundColor;
   max-height: 5vh;
 }
 
