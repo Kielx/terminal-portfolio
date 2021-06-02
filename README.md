@@ -8,9 +8,10 @@ Terminal Portfolio is as the name suggests a terminal themed portfolio showcasin
 - [x] ~~Create about page~~
 - [x] ~~Deploy~~
 - [x] ~~Add projects list~~
-- [ ] Add icons for Github and Live page of project
-- [ ] Add icons for tech used in project
+- [x] Add icons for Github and Live page of project
+- [x] Add icons for tech used in project
 - [ ] Add sourcing from markdown files
+- [ ] Add contact page
 
 ## 🗺️ Project outline
 
