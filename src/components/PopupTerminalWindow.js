@@ -50,7 +50,7 @@ export default function PopupTerminalWindow({
         </h1>
         <div className="popupTerminalWindowImageContainer">
           {(link = popupLiveLink || popupGithubLink) ? (
-            <a href={link}>
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <img
                 src={`${popupImageSrc}`}
                 className="popupTerminaWindowImage"
