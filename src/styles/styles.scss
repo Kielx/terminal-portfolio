@@ -12,6 +12,7 @@ body {
   --bg: #333;
   --windowBg: #111;
   --noFocusBg: #777;
+  --mainTerminalTaskbarText: white;
   background-color: var(--bg);
   font-family: "Roboto Mono", sans-serif;
   background-color: var(--bg);
@@ -36,6 +37,7 @@ header {
 footer {
   background-color: var(--bg);
   max-height: 5vh;
+  padding-left: 3vw;
 }
 
 h1 {

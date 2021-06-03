@@ -1,13 +1,12 @@
 .LsDisplayTaskbar {
   background-color: var(--noFocusBg);
-  color: var(--windowBg);
+  color: var(--mainTerminalTaskbarText);
   width: 100%;
   padding: 5px;
 }
 
 .LsDisplayWindow:hover > .LsDisplayTaskbar {
   background-color: var(--primaryText);
-  color: var(--secondaryText);
 }
 
 .LsDisplayWindow {

@@ -28,11 +28,7 @@ const MainLayout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Portfolio`} />
 
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()} Krzysztof Pantak, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <footer>© {new Date().getFullYear()} Krzysztof Pantak</footer>
     </div>
   )
 }
