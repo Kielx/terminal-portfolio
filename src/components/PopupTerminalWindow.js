@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
 import simpleIcons from "simple-icons"
-import "../styles/terminalPages.scss"
+import "../styles/styles.scss"
 
 export default function PopupTerminalWindow({
   popupHeader,

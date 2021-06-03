@@ -3,6 +3,8 @@ import Typewriter from "typewriter-effect"
 
 import ItemsList from "../components/ItemsList"
 import "../styles/styles.scss"
+import "../styles/winbox.scss"
+import "../styles/mainTerminalWindow.scss"
 
 const LsDisplay = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -25,19 +27,9 @@ const LsDisplay = () => {
   )
 
   return (
-    <div className="LsDisplayWindow" style={{ backgroundColor: "#111" }}>
-      <div className="LsDisplayTaskbar" style={{ width: "100%", padding: 5 }}>
-        Cmd
-      </div>
-      <h3
-        style={{
-          padding: 10,
-          marginBottom: 0,
-          display: "inline-flex",
-          flexWrap: "wrap",
-          whiteSpace: "pre-wrap",
-        }}
-      >
+    <div className="LsDisplayWindow">
+      <div className="LsDisplayTaskbar">Cmd</div>
+      <h3>
         {"C:/Users/Krzysztof Pantak"}
         <div className="break"></div>
         {"> "}

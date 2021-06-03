@@ -25,7 +25,7 @@ const MainLayout = ({ children }) => {
 
   return (
     <div className="mainContainer">
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Portfolio`} />
 
       <main>{children}</main>
       <footer>

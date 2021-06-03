@@ -1,9 +1,18 @@
-@import "variables";
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html,
+body {
+  --primaryText: #00aa00;
+  --secondaryText: #ccc;
+  --linkText: rgb(45, 117, 175);
+  --bg: #333;
+  --windowBg: #111;
+  --noFocusBg: #777;
+  background-color: var(--bg);
 }
 
 .break {
@@ -11,30 +20,36 @@
   height: 0;
 }
 
-.wb-body {
-  background-color: $windowBackgroundColor !important;
-  padding: 1rem;
-}
-
 body {
   font-family: "Roboto Mono", sans-serif;
-  background-color: $backgroundColor;
-  color: $secondaryTextColor;
+  background-color: var(--bg);
+  color: var(--secondaryText);
   font-size: 18px;
   line-height: 1.6;
   width: 100%;
   height: 100%;
 }
 
+header {
+  min-height: 7rem;
+  margin-left: 10vw;
+  margin-top: 2vh;
+}
+
+footer {
+  background-color: var(--bg);
+  max-height: 5vh;
+}
+
 h1 {
-  color: $primaryTextColor;
+  color: var(--primaryText);
   font-size: 50px;
   letter-spacing: -2px;
   margin-bottom: 20px;
 }
 
 h2 {
-  color: $primaryTextColor;
+  color: var(--primaryText);
 }
 
 h3 {
@@ -46,27 +61,12 @@ ul {
 }
 
 a {
-  color: $primaryTextColor;
+  color: var(--primaryText);
   text-decoration: none;
 }
 
 p {
   margin: 20px 0;
-}
-
-nav {
-  width: 30%;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav ul li {
-  color: $primaryTextColor;
-  cursor: pointer;
 }
 
 .container {
@@ -83,22 +83,7 @@ nav ul li {
   display: none;
 }
 
-.cursor {
-  font-weight: 700;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-
-  50% {
-    color: $primaryTextColor;
-  }
-}
-
+//Responsive font sizes
 @media (max-width: 1200px) {
   legend {
     font-size: calc(1.275rem + 0.3vw);
@@ -133,81 +118,6 @@ nav ul li {
   }
   .close {
     font-size: calc(1.275rem + 0.3vw);
-  }
-}
-
-.mainContainer {
-  min-height: 100vh;
-  margin: 0;
-
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-header {
-  min-height: 7rem;
-  margin-left: 10vw;
-  margin-top: 2vh;
-}
-
-footer {
-  background-color: $backgroundColor;
-  max-height: 5vh;
-}
-
-.LsDisplayTaskbar {
-  background-color: $secondaryTextColor;
-  color: #111;
-}
-
-.LsDisplayWindow:hover > .LsDisplayTaskbar {
-  background-color: $primaryTextColor;
-  color: $secondaryTextColor;
-}
-
-.LsDisplayWindow {
-  width: auto;
-  justify-content: flex-start;
-  min-height: 60vh;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.popupWindowLinkButton {
-  align-items: normal;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(0, 0, 238);
-  border-style: none;
-  box-sizing: content-box;
-  color: $primaryTextColor;
-  cursor: pointer;
-  display: inline;
-  font: inherit;
-  height: auto;
-  padding: 0;
-  perspective-origin: 0 0;
-  text-align: start;
-  text-decoration: none;
-  transform-origin: 0 0;
-  width: auto;
-  -moz-appearance: none;
-  -webkit-logical-height: 1em; /* Chrome ignores auto, so we have to use this hack to set the correct height  */
-  -webkit-logical-width: auto; /* Chrome ignores auto, but here for completeness */
-}
-
-/* Mozilla uses a pseudo-element to show focus on buttons, */
-/* but anchors are highlighted via the focus pseudo-class. */
-
-@supports (-moz-appearance: none) {
-  /* Mozilla-only */
-  .popupWindowLinkButton::-moz-focus-inner {
-    /* reset any predefined properties */
-    border: none;
-    padding: 0;
-  }
-  .popupWindowLinkButton:focus {
-    /* add outline to focus pseudo-class */
-    outline-style: dotted;
-    outline-width: 1px;
   }
 }
 

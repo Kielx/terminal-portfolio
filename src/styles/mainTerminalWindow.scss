@@ -1,0 +1,27 @@
+.LsDisplayTaskbar {
+  background-color: var(--noFocusBg);
+  color: var(--windowBg);
+  width: 100%;
+  padding: 5px;
+}
+
+.LsDisplayWindow:hover > .LsDisplayTaskbar {
+  background-color: var(--primaryText);
+  color: var(--secondaryText);
+}
+
+.LsDisplayWindow {
+  background-color: var(--windowBg);
+  width: auto;
+  justify-content: flex-start;
+  min-height: 60vh;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  h3 {
+    padding: 10px;
+    margin-bottom: 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+  }
+}
