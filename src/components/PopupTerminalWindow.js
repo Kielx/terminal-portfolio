@@ -14,6 +14,7 @@ export default function PopupTerminalWindow({
   popupGithubLink,
   popupLiveLink,
   techIcons,
+  html,
 }) {
   let link = ""
   techIcons = techIcons?.map(icon =>
@@ -99,6 +100,10 @@ export default function PopupTerminalWindow({
           ""
         )}
         <div className="popupTerminaWindowTextContainer">
+          <div
+            className="popupTerminaWindowText"
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></div>
           <p className="popupTerminaWindowText">{popupText}</p>
           {techIcons ? (
             <>

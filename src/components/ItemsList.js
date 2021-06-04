@@ -3,10 +3,30 @@ import ReactDOM from "react-dom"
 //importing winbox https://github.com/nextapps-de/winbox/issues/1
 import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
+import { useStaticQuery, graphql } from "gatsby"
 
 import PopupTerminalWindow from "../components/PopupTerminalWindow"
 
 export default function ItemsList() {
+  const data = useStaticQuery(graphql`
+    query {
+      markdownRemark {
+        frontmatter {
+          listName
+          nameOfClass
+          popupGithubLink
+          popupHeader
+          popupImageAlt
+          popupImageSrc
+          popupLiveLink
+          popupText
+          techIcons
+          title
+        }
+        html
+      }
+    }
+  `)
   const myItems = [
     {
       listName: "/About",
@@ -67,15 +87,15 @@ export default function ItemsList() {
     return window.screen.width > 1000 ? "60%" : "100%"
   }
 
-  const listItems = myItems.map(item =>
-    item.popupHeader ? (
-      <li className={item.nameOfClass}>
+  const listItems = [data.markdownRemark].map(item =>
+    item.frontmatter.popupHeader ? (
+      <li className={item.frontmatter.nameOfClass}>
         <button
           className="popupWindowLinkButton"
           style={{ cursor: "pointer" }}
           onClick={() => {
             const win = new WinBox({
-              title: item.popupHeader,
+              title: item.frontmatter.popupHeader,
               width: checkScreenWidth(),
               height: checkScreenWidth(),
               x: "center",
@@ -89,23 +109,24 @@ export default function ItemsList() {
             })
             ReactDOM.render(
               React.createElement(PopupTerminalWindow, {
-                popupHeader: item.popupHeader,
-                popupImageSrc: item.popupImageSrc,
-                popupImageAlt: item.popupImageAlt,
-                popupText: item.popupText,
-                popupGithubLink: item.popupGithubLink,
-                popupLiveLink: item.popupLiveLink,
-                techIcons: item.techIcons,
+                popupHeader: item.frontmatter.popupHeader,
+                popupImageSrc: item.frontmatter.popupImageSrc,
+                popupImageAlt: item.frontmatter.popupImageAlt,
+                popupText: item.frontmatter.popupText,
+                popupGithubLink: item.frontmatter.popupGithubLink,
+                popupLiveLink: item.frontmatter.popupLiveLink,
+                techIcons: item.frontmatter.techIcons,
+                html: item.html,
               }),
               win.body
             )
           }}
         >
-          {item.listName}
+          {item.frontmatter.listName}
         </button>
       </li>
     ) : (
-      <li className="projects">{item.listName}</li>
+      <li className="projects">{item.frontmatter.listName}</li>
     )
   )
 

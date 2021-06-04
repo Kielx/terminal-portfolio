@@ -35,6 +35,14 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-split-css`,
