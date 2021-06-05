@@ -24,9 +24,12 @@ Terminal Portfolio is as the name suggests a terminal themed portfolio showcasin
 - [x] ~~Terminal styled boxes with projects~~
 - [x] ~~List of projects~~
 
-### 🕹️ More to consider and add
+### 🕹️ Ideas to consider
 
 - [x] ~~Responsiveness (how to display photo with ASCII text to look good on smaller screens?)~~
 - [ ] Maybe command line styled input that when you write ls or dir shows list of projects, when you type in cd "project name" it opens a terminal styled project window
 - [ ] Blog
 - [ ] CMS
+- [ ] Acryllic effect
+- [ ] Semi transparent background for terminal 
+- [ ] Mac looks
