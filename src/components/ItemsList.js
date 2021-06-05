@@ -10,7 +10,7 @@ import PopupTerminalWindow from "../components/PopupTerminalWindow"
 export default function ItemsList() {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      all: allMarkdownRemark {
         edges {
           node {
             frontmatter {
@@ -24,18 +24,61 @@ export default function ItemsList() {
               title
             }
             html
+            fileAbsolutePath
+          }
+        }
+      }
+      projects: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "//projects/[^/]+$/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              listName
+              nameOfClass
+              popupGithubLink
+              popupImageAlt
+              popupImageSrc
+              popupLiveLink
+              techIcons
+              title
+            }
+            html
+            fileAbsolutePath
+          }
+        }
+      }
+      info: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "//info/[^/]+$/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              listName
+              nameOfClass
+              popupGithubLink
+              popupImageAlt
+              popupImageSrc
+              popupLiveLink
+              techIcons
+              title
+            }
+            html
+            fileAbsolutePath
           }
         }
       }
     }
   `)
-
   const checkScreenWidth = () => {
     return window.screen.width > 1000 ? "60%" : "100%"
   }
-  const listItems = data.allMarkdownRemark.edges.map(item =>
+  const projects = data.projects.edges.map(item =>
     item.node.frontmatter.title ? (
-      <li className={item.node.frontmatter.nameOfClass}>
+      <li
+        key={item.node.frontmatter.title}
+        className={item.node.frontmatter.nameOfClass}
+      >
         <button
           className="popupWindowLinkButton"
           style={{ cursor: "pointer" }}
@@ -75,5 +118,5 @@ export default function ItemsList() {
     )
   )
 
-  return <ul className="mappedItemsList">Projects: {listItems}</ul>
+  return <ul className="mappedItemsList">Projects: {projects}</ul>
 }
