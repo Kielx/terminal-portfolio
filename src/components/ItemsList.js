@@ -73,6 +73,45 @@ export default function ItemsList() {
   const checkScreenWidth = () => {
     return window.screen.width > 1000 ? "60%" : "100%"
   }
+
+  const info = data.info.edges.map(item => (
+    <li key={item.node.frontmatter.title} className="infoItem">
+      <button
+        className="popupWindowLinkButton"
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          const win = new WinBox({
+            title: item.node.frontmatter.title,
+            width: checkScreenWidth(),
+            height: checkScreenWidth(),
+            x: "center",
+            y: "center",
+            onfocus: function () {
+              this.setBackground("#00aa00")
+            },
+            onblur: function () {
+              this.setBackground("#777")
+            },
+          })
+          ReactDOM.render(
+            React.createElement(PopupTerminalWindow, {
+              title: item.node.frontmatter.title,
+              popupImageSrc: item.node.frontmatter.popupImageSrc,
+              popupImageAlt: item.node.frontmatter.popupImageAlt,
+              popupGithubLink: item.node.frontmatter.popupGithubLink,
+              popupLiveLink: item.node.frontmatter.popupLiveLink,
+              techIcons: item.node.frontmatter.techIcons,
+              html: item.node.html,
+            }),
+            win.body
+          )
+        }}
+      >
+        {item.node.frontmatter.listName}
+      </button>
+    </li>
+  ))
+
   const projects = data.projects.edges.map(item =>
     item.node.frontmatter.title ? (
       <li
@@ -118,5 +157,9 @@ export default function ItemsList() {
     )
   )
 
-  return <ul className="mappedItemsList">Projects: {projects}</ul>
+  return (
+    <ul className="mappedItemsList">
+      → Info: {info} → Projects: {projects}
+    </ul>
+  )
 }
