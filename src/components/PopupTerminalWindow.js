@@ -7,7 +7,7 @@ import simpleIcons from "simple-icons"
 import "../styles/styles.scss"
 
 export default function PopupTerminalWindow({
-  popupHeader,
+  title,
   popupImageAlt,
   popupText,
   popupImageSrc,
@@ -41,7 +41,7 @@ export default function PopupTerminalWindow({
           <Typewriter
             onInit={typewriter => {
               typewriter
-                .typeString(`${popupHeader}`)
+                .typeString(`${title}`)
                 .start()
                 .callFunction(function (state) {
                   state.elements.cursor.style.display = "none"
