@@ -1,9 +1,38 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
+import { navigate } from "gatsby-link"
 import "../styles/styles.scss"
 import "../styles/contact.scss"
 
-export default function contact() {
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
+export default function Contact({ close }) {
+  const [state, setState] = React.useState({})
+
+  const handleChange = e => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(close)
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error))
+  }
+
   return (
     <div>
       <div>
@@ -21,11 +50,19 @@ export default function contact() {
         </h1>
         <form
           name="contact"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
+          method="post"
           action="/success"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
         >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={handleChange} />
+            </label>
+          </p>
           <input type="hidden" name="form-name" value="contact"></input>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" required="true" placeholder="Name" />
