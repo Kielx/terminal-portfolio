@@ -19,13 +19,7 @@ export default function contact() {
             }}
           />
         </h1>
-        <form
-          name="contact"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-          action="/success"
-        >
+        <form name="contact" method="POST" action="/success" netlify>
           <input type="hidden" name="form-name" value="contact"></input>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" required="true" placeholder="Name" />
