@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
 
-import contact from "./Contact"
+import Contact from "./Contact"
 import PopupTerminalWindow from "../components/PopupTerminalWindow"
 
 export default function ItemsList() {
@@ -177,7 +177,13 @@ export default function ItemsList() {
               this.setBackground("#777")
             },
           })
-          ReactDOM.render(React.createElement(contact), win.body)
+
+          ReactDOM.render(
+            React.createElement(Contact, {
+              close: () => win.close(),
+            }),
+            win.body
+          )
         }}
       >
         /Contact
