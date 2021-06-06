@@ -9,7 +9,7 @@ const IndexPage = () => (
     <Seo title="Home" />
 
     <div className="container">
-      <LsDisplay></LsDisplay>
+      <LsDisplay text="dir" name={true} delay="natural"></LsDisplay>
     </div>
   </MainLayout>
 )
