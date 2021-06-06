@@ -56,7 +56,6 @@ export default function Contact({ close }) {
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
               Don’t fill this out:{" "}
@@ -65,7 +64,13 @@ export default function Contact({ close }) {
           </p>
           <input type="hidden" name="form-name" value="contact"></input>
           <label htmlFor="name">Your Name</label>
-          <input type="text" id="name" required="true" placeholder="Name" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required="true"
+            placeholder="Name"
+          />
           <label htmlFor="email">Your Email</label>
           <input
             type="email"
