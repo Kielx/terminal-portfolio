@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
 
+import contact from "./Contact"
 import PopupTerminalWindow from "../components/PopupTerminalWindow"
 
 export default function ItemsList() {
@@ -157,9 +158,36 @@ export default function ItemsList() {
     )
   )
 
+  const contactItem = (
+    <li className="infoItem">
+      <button
+        className="popupWindowLinkButton"
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          const win = new WinBox({
+            title: "Contact me",
+            width: checkScreenWidth(),
+            height: checkScreenWidth(),
+            x: "center",
+            y: "center",
+            onfocus: function () {
+              this.setBackground("#00aa00")
+            },
+            onblur: function () {
+              this.setBackground("#777")
+            },
+          })
+          ReactDOM.render(React.createElement(contact), win.body)
+        }}
+      >
+        /Contact
+      </button>
+    </li>
+  )
+
   return (
     <ul className="mappedItemsList">
-      → Info: {info} → Projects: {projects}
+      → Info: {info} {contactItem} → Projects: {projects}
     </ul>
   )
 }

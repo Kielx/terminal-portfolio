@@ -1,0 +1,46 @@
+form {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
+  background-color: var(--bg);
+  color: var(--primaryText);
+  border: 0;
+  border-bottom: 2px solid #555;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-bottom: 2vh;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  resize: none;
+  width: 80%;
+}
+
+button[type="submit"] {
+  padding: 0.4rem;
+  background-color: var(--bg);
+  color: var(--secondaryText);
+  border-radius: 0px;
+  font-weight: bold;
+  margin-bottom: 2vh;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+label {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus {
+  border-radius: 0px;
+}
