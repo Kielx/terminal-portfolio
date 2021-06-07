@@ -11,7 +11,8 @@ Terminal Portfolio is as the name suggests a terminal themed portfolio showcasin
 - [x] Add icons for Github and Live page of project
 - [x] Add icons for tech used in project
 - [x] Add sourcing from markdown files
-- [ ] Add contact page
+- [x] Add contact page
+- [ ] Deal with form input
 
 ## 🗺️ Project outline
 
