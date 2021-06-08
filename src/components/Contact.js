@@ -14,11 +14,11 @@ export default function Contact({ close }) {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch(process.env.AWS_CONTACT_FORM_API_URL, {
+    fetch(process.env.GATSBY_AWS_CONTACT_FORM_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-API-Key": process.env.AWS_CONTACT_FORM_X_API_KEY,
+        "X-API-Key": process.env.GATSBY_AWS_CONTACT_FORM_X_API_KEY,
       },
       body: JSON.stringify(state),
     })
