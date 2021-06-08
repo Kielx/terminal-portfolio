@@ -18,6 +18,7 @@ export default function Contact({ close }) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "X-API-Key": process.env.AWS_CONTACT_FORM_X_API_KEY,
       },
       body: JSON.stringify(state),
     })
