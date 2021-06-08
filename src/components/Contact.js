@@ -4,12 +4,6 @@ import { navigate } from "gatsby-link"
 import "../styles/styles.scss"
 import "../styles/contact.scss"
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
-
 export default function Contact({ close }) {
   const [state, setState] = React.useState({})
 
@@ -20,16 +14,15 @@ export default function Contact({ close }) {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch("/", {
+    fetch(process.env.AWS_CONTACT_FORM_API_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...state,
-      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(state),
     })
       .then(close)
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => navigate("/success"))
       .catch(error => alert(error))
   }
 
@@ -51,9 +44,7 @@ export default function Contact({ close }) {
         <form
           name="contact"
           method="post"
-          action="/success"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          action="/contact-us"
           onSubmit={handleSubmit}
         >
           <p hidden>
@@ -68,8 +59,9 @@ export default function Contact({ close }) {
             type="text"
             id="name"
             name="name"
-            required="true"
+            required={true}
             placeholder="Name"
+            onChange={handleChange}
           />
           <label htmlFor="email">Your Email</label>
           <input
@@ -78,6 +70,7 @@ export default function Contact({ close }) {
             name="email"
             required={true}
             placeholder="E-Mail adress"
+            onChange={handleChange}
           />
           <label htmlFor="message">Message</label>
           <textarea
@@ -86,6 +79,7 @@ export default function Contact({ close }) {
             required={true}
             placeholder="Your message"
             rows="3"
+            onChange={handleChange}
           ></textarea>
           <button type="submit">Send</button>
         </form>
