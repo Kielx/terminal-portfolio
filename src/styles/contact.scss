@@ -12,7 +12,7 @@ textarea {
   background-color: var(--bg);
   color: var(--primaryText);
   border: 0;
-  border-bottom: 2px solid #555;
+  border: 2px solid #555;
   border-radius: 0px;
   font-weight: bold;
   margin-bottom: 2vh;
@@ -26,14 +26,32 @@ textarea {
 }
 
 button[type="submit"] {
-  padding: 0.4rem;
-  background-color: var(--bg);
-  color: var(--secondaryText);
+  padding: 0.6rem;
+  background-color: var(--windowBg);
+  color: #777;
   border-radius: 0px;
   font-weight: bold;
   margin-bottom: 2vh;
   font-family: inherit;
   font-size: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid #555;
+  transition: all 0.4s ease 0s;
+}
+
+button[type="submit"]:hover {
+  color: #ffffff !important;
+  background: var(--primaryText);
+  border-color: #048604 !important;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+button[type="submit"]:active {
+  position: relative;
+  top: 2px;
 }
 
 label {

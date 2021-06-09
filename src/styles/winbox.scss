@@ -73,6 +73,11 @@
   color: var(--linkText);
 }
 
+.popupTerminalWindowLinkIcon:active {
+  position: relative;
+  top: 2px;
+}
+
 .svgIcon {
   fill: var(--secondaryText);
   width: 2rem;
@@ -98,6 +103,11 @@
   -moz-appearance: none;
   -webkit-logical-height: 1em; /* Chrome ignores auto, so we have to use this hack to set the correct height  */
   -webkit-logical-width: auto; /* Chrome ignores auto, but here for completeness */
+}
+
+.popupWindowLinkButton:active {
+  position: relative;
+  top: 2px;
 }
 
 /* Mozilla uses a pseudo-element to show focus on buttons, */
