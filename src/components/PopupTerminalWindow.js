@@ -53,14 +53,14 @@ export default function PopupTerminalWindow({
           {(link = popupLiveLink || popupGithubLink) ? (
             <a href={link} target="_blank" rel="noopener noreferrer">
               <img
-                src={`${popupImageSrc}`}
+                src={`./${popupImageSrc}`}
                 className="popupTerminaWindowImage"
                 alt={popupImageAlt}
               ></img>
             </a>
           ) : (
             <img
-              src={`${popupImageSrc}`}
+              src={`./${popupImageSrc}`}
               className="popupTerminaWindowImage"
               alt={popupImageAlt}
             ></img>
