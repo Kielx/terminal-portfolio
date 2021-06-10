@@ -7,12 +7,13 @@ popupImageAlt: "Phonebook app"
 popupLiveLink: "https://fullstackopen-phonebook-api.herokuapp.com/"
 popupGithubLink: "https://github.com/Kielx/fullstackopen-part3"
 techIcons: [
-        "MongoDB",
-        "Express",
-        "React",
-        "node-dot-js",
-        "HTML5",
-        "CSS3",
+        "mongodb",
+        "express",
+        "react",
+        "nodedotjs",
+        "bootstrap",
+        "html5",
+        "css3",
       ]
 ---
 

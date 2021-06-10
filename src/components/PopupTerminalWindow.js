@@ -3,7 +3,6 @@ import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
-import simpleIcons from "simple-icons"
 import "../styles/styles.scss"
 
 export default function PopupTerminalWindow({
@@ -17,23 +16,15 @@ export default function PopupTerminalWindow({
   html,
 }) {
   let link = ""
-  techIcons = techIcons?.map(icon =>
-    simpleIcons[icon]?.["title"] ? (
-      <li className="techItem">
-        <svg
-          className="svgIcon"
-          viewBox="0 0 25 25"
-          role="img"
-          alt={simpleIcons[icon]?.["title"]}
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <path d={simpleIcons[icon]?.["path"]} />
-        </svg>
-      </li>
-    ) : (
-      ""
-    )
-  )
+  techIcons = techIcons?.map(icon => (
+    <li className="techItem">
+      <img
+        className="svgIcon"
+        src={`https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/${icon}.svg`}
+      />
+    </li>
+  ))
+
   return (
     <div>
       <div className="popupTerminaWindowContainer">
