@@ -16,10 +16,13 @@ const Header = ({ siteTitle }) => (
           onInit={typewriter => {
             typewriter
               .typeString("Software Developer")
+              .pauseFor(800)
               .deleteAll()
               .typeString("Problem solver")
+              .pauseFor(800)
               .deleteAll()
               .typeString("Creator")
+              .pauseFor(800)
               .deleteAll()
               .typeString("Krzysztof Pantak")
               .pauseFor(1500)
