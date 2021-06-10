@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
               .pauseFor(800)
               .deleteAll()
               .typeString("Krzysztof Pantak")
-              .pauseFor(1500)
+              .pauseFor(2500)
               .deleteAll()
               .start()
           }}
