@@ -21,6 +21,7 @@ export default function PopupTerminalWindow({
       <img
         className="svgIcon"
         src={`https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/${icon}.svg`}
+        alt="Tech icon"
       />
     </li>
   ))

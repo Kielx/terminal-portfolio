@@ -193,7 +193,8 @@ export default function ItemsList() {
 
   return (
     <ul className="mappedItemsList">
-      → Info: {info} {contactItem} → Projects: {projects}
+      <li>→ Info:</li> {info} {contactItem} <li>→ Projects:</li>
+      {projects}
     </ul>
   )
 }
