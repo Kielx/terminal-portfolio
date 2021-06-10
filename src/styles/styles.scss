@@ -69,11 +69,10 @@ p {
 }
 
 .container {
-  max-width: 80vw;
+  width: 80vw;
   margin: auto;
   min-height: 70vh;
   display: flex;
-  flex-direction: column;
   justify-content: left;
   align-items: left;
 }
