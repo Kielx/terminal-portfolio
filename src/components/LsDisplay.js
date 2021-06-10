@@ -15,7 +15,6 @@ const LsDisplay = ({ text, name, delay }) => {
       onInit={typewriter => {
         typewriter
           .typeString(text)
-          .pauseFor(100)
           .callFunction(() => {
             setIsLoaded(true)
           })

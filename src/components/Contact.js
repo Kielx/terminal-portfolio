@@ -13,7 +13,6 @@ export default function Contact({ close }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    const form = e.target
     fetch(process.env.GATSBY_AWS_CONTACT_FORM_API_URL, {
       method: "POST",
       headers: {

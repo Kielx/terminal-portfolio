@@ -33,13 +33,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`roboto mono`, `roboto`],
-        display: "swap",
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,

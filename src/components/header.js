@@ -15,15 +15,14 @@ const Header = ({ siteTitle }) => (
           }}
           onInit={typewriter => {
             typewriter
-              .pauseFor(1500)
               .typeString("Software Developer")
-              .pauseFor(2500)
+              .pauseFor(800)
               .deleteAll()
               .typeString("Problem solver")
-              .pauseFor(2500)
+              .pauseFor(800)
               .deleteAll()
               .typeString("Creator")
-              .pauseFor(2500)
+              .pauseFor(800)
               .deleteAll()
               .typeString("Krzysztof Pantak")
               .pauseFor(2500)

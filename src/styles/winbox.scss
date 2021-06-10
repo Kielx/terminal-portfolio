@@ -79,7 +79,8 @@
 }
 
 .svgIcon {
-  fill: var(--secondaryText);
+  filter: invert(84%) sepia(0%) saturate(3021%) hue-rotate(176deg)
+    brightness(131%) contrast(60%);
   width: 2rem;
 }
 
@@ -94,7 +95,7 @@
   display: inline;
   font: inherit;
   height: auto;
-  padding: 0;
+  padding: 3px;
   perspective-origin: 0 0;
   text-align: start;
   text-decoration: none;
