@@ -1,6 +1,9 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import simpleIcons from "simple-icons"
 import "../styles/styles.scss"
 
 export default function PopupTerminalWindow({
@@ -13,8 +16,7 @@ export default function PopupTerminalWindow({
   techIcons,
   html,
 }) {
-  let link =
-    "" /* 
+  let link = ""
   techIcons = techIcons?.map(icon =>
     simpleIcons[icon]?.["title"] ? (
       <li className="techItem">
@@ -31,7 +33,7 @@ export default function PopupTerminalWindow({
     ) : (
       ""
     )
-  ) */
+  )
   return (
     <div>
       <div className="popupTerminaWindowContainer">
@@ -68,11 +70,13 @@ export default function PopupTerminalWindow({
         {popupGithubLink || popupLiveLink ? (
           <div className="popupTerminalWindowLinkIcons">
             {popupLiveLink ? (
-              <a
-                href={popupLiveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              ></a>
+              <a href={popupLiveLink} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon
+                  icon={faLink}
+                  className="popupTerminalWindowLinkIcon"
+                  size="2x"
+                />
+              </a>
             ) : (
               ""
             )}
@@ -81,7 +85,13 @@ export default function PopupTerminalWindow({
                 href={popupGithubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-              ></a>
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="popupTerminalWindowLinkIcon"
+                  size="2x"
+                />
+              </a>
             ) : (
               ""
             )}
