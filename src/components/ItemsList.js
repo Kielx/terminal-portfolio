@@ -91,7 +91,7 @@ export default function ItemsList() {
               this.setBackground("#00aa00")
             },
             onblur: function () {
-              this.setBackground("#777")
+              this.setBackground("#666")
             },
           })
           ReactDOM.render(
@@ -133,7 +133,7 @@ export default function ItemsList() {
                 this.setBackground("#00aa00")
               },
               onblur: function () {
-                this.setBackground("#777")
+                this.setBackground("#666")
               },
             })
             ReactDOM.render(
