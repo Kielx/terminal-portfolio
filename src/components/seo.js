@@ -69,7 +69,20 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        media="print"
+        onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      />
+    </Helmet>
   )
 }
 
