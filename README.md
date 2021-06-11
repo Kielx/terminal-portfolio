@@ -8,11 +8,14 @@ Terminal Portfolio is as the name suggests a terminal themed portfolio showcasin
 - [x] ~~Create about page~~
 - [x] ~~Deploy~~
 - [x] ~~Add projects list~~
-- [x] Add icons for Github and Live page of project
-- [x] Add icons for tech used in project
-- [x] Add sourcing from markdown files
-- [x] Add contact page
-- [ ] Deal with form input
+- [x] ~~Add icons for Github and Live page of project~~
+- [x] ~~Add icons for tech used in project~~
+- [x] ~~Add sourcing from markdown files~~
+- [x] ~~Add contact page~~
+- [x] ~~Deal with form input~~
+- [ ] Add rest of projects
+- [ ] Change display of windows to modal on mobile
+- [ ] Consider changing image of ACII to textarea
 
 ## 🗺️ Project outline
 
