@@ -14,6 +14,7 @@ techIcons: [
         "bootstrap",
         "html5",
         "css3",
+        "heroku",
       ]
 ---
 
