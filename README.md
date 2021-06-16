@@ -15,7 +15,7 @@ Terminal Portfolio is as the name suggests a terminal themed portfolio showcasin
 - [x] ~~Deal with form input~~
 - [ ] Add rest of projects
 - [ ] Change display of windows to modal on mobile
-- [ ] Consider changing image of ACII to textarea
+- [ ] Consider changing image of ASCII to textarea
 
 ## 🗺️ Project outline
 
