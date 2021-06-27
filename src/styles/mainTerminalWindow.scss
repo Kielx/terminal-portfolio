@@ -34,6 +34,8 @@
 
 .mappedItemsList {
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects-items {
@@ -42,4 +44,12 @@
 
 .infoItem {
   margin-left: 40px;
+}
+
+.miniProject {
+  order: 2;
+}
+
+.miniProjects {
+  order: 3;
 }

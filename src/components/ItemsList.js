@@ -194,7 +194,7 @@ export default function ItemsList() {
   return (
     <ul className="mappedItemsList">
       <li>→ Info:</li> {info} {contactItem} <li>→ Projects:</li>
-      {projects}
+      {projects} <li className="miniProject">→ Mini-Projects:</li>
     </ul>
   )
 }
