@@ -1,6 +1,18 @@
 .wb-body {
   background-color: var(--windowBg) !important;
   padding: 1rem;
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+.winbox {
+  border-radius: var(--radius);
+}
+
+@media (max-width: 1000px) {
+  .winbox {
+    border-radius: 0px;
+  }
 }
 
 .mainContainer {
@@ -51,6 +63,7 @@
 .techItemsList {
   display: inline-flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .techItemsList > li {
