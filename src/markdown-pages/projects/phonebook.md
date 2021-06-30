@@ -2,7 +2,7 @@
 nameOfClass: "projects-items"
 title: "Phonebook"
 listName: "/☎️ Phonebook"
-popupImageSrc: "phonebookASCII.png"
+popupImageSrc: "phonebook.png"
 popupImageAlt: "Phonebook app"
 popupLiveLink: "https://fullstackopen-phonebook-api.herokuapp.com/"
 popupGithubLink: "https://github.com/Kielx/fullstackopen-part3"

@@ -13,17 +13,17 @@ export default function Contact({ close }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    fetch(process.env.GATSBY_AWS_CONTACT_FORM_API_URL, {
+    const url = `/.netlify/functions/contact`
+    fetch(url, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-API-Key": process.env.GATSBY_AWS_CONTACT_FORM_X_API_KEY,
-      },
       body: JSON.stringify(state),
     })
+      .then(response =>
+        response.status == 200
+          ? navigate("/success")
+          : alert("An error occured while trying to send contact message!")
+      )
       .then(close)
-      .then(() => navigate("/success"))
-      .catch(error => alert(error))
   }
 
   return (
