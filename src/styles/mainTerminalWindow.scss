@@ -6,10 +6,11 @@
   background-color: var(--windowBg);
   color: var(--mainTerminalTaskbarText);
   width: 100%;
-  padding: 5px;
+  padding: 3px;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   border-bottom: 1px solid black;
+  text-align: center;
 }
 
 .LsDisplayWindow:focus-within > .LsDisplayTaskbar {
