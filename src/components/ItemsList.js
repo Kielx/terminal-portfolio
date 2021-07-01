@@ -88,10 +88,12 @@ export default function ItemsList() {
             x: "center",
             y: "center",
             onfocus: function () {
-              this.setBackground("#00aa00")
+              this.removeClass("wb-no-focus")
+              this.addClass("wb-focus")
             },
             onblur: function () {
-              this.setBackground("#666")
+              this.removeClass("wb-focus")
+              this.addClass("wb-no-focus")
             },
           })
           ReactDOM.render(
@@ -130,10 +132,12 @@ export default function ItemsList() {
               x: "center",
               y: "center",
               onfocus: function () {
-                this.setBackground("#00aa00")
+                this.removeClass("wb-no-focus")
+                this.addClass("wb-focus")
               },
               onblur: function () {
-                this.setBackground("#666")
+                this.removeClass("wb-focus")
+                this.addClass("wb-no-focus")
               },
             })
             ReactDOM.render(
@@ -171,10 +175,12 @@ export default function ItemsList() {
             x: "center",
             y: "center",
             onfocus: function () {
-              this.setBackground("#00aa00")
+              this.removeClass("wb-no-focus")
+              this.addClass("wb-focus")
             },
             onblur: function () {
-              this.setBackground("#777")
+              this.removeClass("wb-focus")
+              this.addClass("wb-no-focus")
             },
           })
 

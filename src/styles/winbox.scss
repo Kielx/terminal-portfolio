@@ -9,6 +9,28 @@
   border-radius: var(--radius);
 }
 
+.wb-no-focus {
+  background-color: var(--windowBg) !important;
+  .wb-title {
+    border-bottom: 1px solid black;
+  }
+
+  .wb-icon {
+    border-bottom: 1px solid black;
+  }
+}
+
+.wb-focus {
+  background-color: var(--focusBg) !important;
+  .wb-title {
+    border-bottom: 1px solid var(--primaryText);
+  }
+
+  .wb-icon {
+    border-bottom: 1px solid var(--primaryText);
+  }
+}
+
 @media (max-width: 1000px) {
   .winbox {
     border-radius: 0px;

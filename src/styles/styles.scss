@@ -6,12 +6,12 @@
 
 html,
 body {
-  --primaryText: #00aa00;
+  --primaryText: #ffc600;
   --secondaryText: #ccc;
-  --linkText: rgb(45, 117, 175);
-  --bg: #333;
-  --windowBg: #111;
-  --noFocusBg: #666;
+  --linkText: #047be3;
+  --bg: #15232d;
+  --windowBg: #193549;
+  --focusBg: hsl(205, 51%, 16%);
   --mainTerminalTaskbarText: white;
   background-color: var(--bg);
   font-family: "Roboto Mono", sans-serif;
