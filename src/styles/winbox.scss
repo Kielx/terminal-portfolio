@@ -192,3 +192,53 @@
     transition: color 0.5s ease-in-out;
   }
 }
+
+.wb-title {
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.wb-icon {
+  display: flex;
+  align-items: center;
+}
+
+.wb-header {
+  display: flex;
+  align-content: center;
+}
+
+.wb-min {
+  background: #00ca56;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #14ae46;
+  border-radius: 50%;
+  margin-inline: 0.3rem;
+  margin-left: 10px;
+}
+
+.wb-max {
+  background: #ffbd4c;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e09e3e;
+  border-radius: 50%;
+  margin-inline: 0.3rem;
+}
+
+.wb-close {
+  background: #ff5c5c;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e33e41;
+  border-radius: 50%;
+  margin-inline: 0.3rem;
+}
+
+.wb-full {
+  display: none;
+}
