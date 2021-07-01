@@ -141,11 +141,16 @@
   transform-origin: 0 0;
   width: auto;
   -moz-appearance: none;
+  transition: color 0.5s ease-in-out;
 }
 
 .popupWindowLinkButton:active {
   position: relative;
   top: 2px;
+}
+
+.popupWindowLinkButton:hover {
+  color: var(--linkText);
 }
 
 /* Mozilla uses a pseudo-element to show focus on buttons, */
@@ -218,7 +223,8 @@
   border: 1px solid #14ae46;
   border-radius: 50%;
   margin-inline: 0.3rem;
-  margin-left: 10px;
+
+  order: 3;
 }
 
 .wb-max {
@@ -228,6 +234,7 @@
   border: 1px solid #e09e3e;
   border-radius: 50%;
   margin-inline: 0.3rem;
+  order: 2;
 }
 
 .wb-close {
@@ -237,6 +244,8 @@
   border: 1px solid #e33e41;
   border-radius: 50%;
   margin-inline: 0.3rem;
+  margin-left: 10px;
+  order: 1;
 }
 
 .wb-full {
