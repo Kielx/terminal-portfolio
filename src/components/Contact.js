@@ -19,7 +19,7 @@ export default function Contact({ close }) {
       body: JSON.stringify(state),
     })
       .then(response =>
-        response.status == 200
+        response.status === 200
           ? navigate("/success")
           : alert("An error occured while trying to send contact message!")
       )
