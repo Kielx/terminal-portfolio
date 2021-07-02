@@ -31,6 +31,6 @@ techIcons: [
 
 Software Developer based in Kielce Poland 🇵🇱.
 
-CS Sophomore at Kielce Univeristy of Technology.
+CS Sophomore at Kielce University of Technology.
 
-A Law Enforcer, EULEX Peacekeeping Mission in Kosovo Veteran, Strength Coach and a family man.
+EULEX Peacekeeping Mission in Kosovo Veteran, Strength Coach, Law Enforcer and a family man.
