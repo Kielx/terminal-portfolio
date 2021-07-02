@@ -2,7 +2,35 @@
 listName: "👨‍💻 /About"
 title: "About me"
 popupImageSrc: "mojephoto.jpg"
-popupImageAlt: "Photo of myself rendered with ASCII characters"
+popupImageAlt: "Cartoon photo of myself"
+popupGithubLink: "https://github.com/Kielx"
+techIcons: [
+        "javascript",
+        "nodedotjs",
+        "react", 
+        "html5",
+        "css3",
+        "cplusplus", 
+        "c",
+        "python",
+        "mongodb",
+        "express",
+        "bootstrap", 
+        "sass",
+        "heroku",
+        "netlify",
+        "amazonaws",
+        "postman",
+        "d3dotjs", 
+        "archlinux",
+        "linux",
+        "windowsterminal",
+        "fontawesome"
+      ]
 ---
 
-Software Developer currently working on finishing my CS Degree while also being a Law Enforcer, EULEX Peacekeeping Mission in Kosovo Veteran, Strength Coach and a family man. Based in 🇵🇱 Poland."
+Software Developer based in Kielce Poland 🇵🇱.
+
+CS Sophomore at Kielce Univeristy of Technology.
+
+A Law Enforcer, EULEX Peacekeeping Mission in Kosovo Veteran, Strength Coach and a family man.
