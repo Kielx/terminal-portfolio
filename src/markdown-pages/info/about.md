@@ -1,7 +1,7 @@
 ---
 listName: "/About"
 title: "About me"
-popupImageSrc: "mojephotoASCII.png"
+popupImageSrc: "mojephoto.jpg"
 popupImageAlt: "Photo of myself rendered with ASCII characters"
 ---
 
