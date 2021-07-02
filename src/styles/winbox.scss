@@ -223,7 +223,6 @@
   border: 1px solid #14ae46;
   border-radius: 50%;
   margin-inline: 0.3rem;
-
   order: 3;
 }
 
@@ -250,4 +249,21 @@
 
 .wb-full {
   display: none;
+}
+
+@media (max-width: 1000px) {
+  .wb-min {
+    width: 20px;
+    height: 20px;
+  }
+
+  .wb-max {
+    width: 20px;
+    height: 20px;
+  }
+
+  .wb-close {
+    width: 20px;
+    height: 20px;
+  }
 }
