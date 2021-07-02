@@ -12,12 +12,17 @@ textarea {
   background-color: var(--bg);
   color: var(--primaryText);
   border: 0;
-  border: 2px solid #555;
-  border-radius: 0px;
+  border: 1px solid black;
+  border-radius: var(--radius);
   font-weight: bold;
   margin-bottom: 2vh;
   font-family: inherit;
   font-size: inherit;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 3pt var(--primaryText);
 }
 
 textarea {
@@ -42,7 +47,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  color: #ffffff !important;
+  color: var(--linkText) !important;
   background: var(--primaryText);
   border-color: #048604 !important;
   transition: all 0.4s ease 0s;
