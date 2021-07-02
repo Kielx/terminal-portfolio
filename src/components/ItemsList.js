@@ -75,92 +75,62 @@ export default function ItemsList() {
     return window.screen.width > 1000 ? "60%" : "100%"
   }
 
+  const createWinboxInstance = item => {
+    const win = new WinBox({
+      title: item.node.frontmatter.title,
+      width: checkScreenWidth(),
+      height: checkScreenWidth(),
+      x: "center",
+      y: "center",
+      onfocus: function () {
+        this.removeClass("wb-no-focus")
+        this.addClass("wb-focus")
+      },
+      onblur: function () {
+        this.removeClass("wb-focus")
+        this.addClass("wb-no-focus")
+      },
+    })
+    ReactDOM.render(
+      React.createElement(PopupTerminalWindow, {
+        title: item.node.frontmatter.title,
+        popupImageSrc: item.node.frontmatter.popupImageSrc,
+        popupImageAlt: item.node.frontmatter.popupImageAlt,
+        popupGithubLink: item.node.frontmatter.popupGithubLink,
+        popupLiveLink: item.node.frontmatter.popupLiveLink,
+        techIcons: item.node.frontmatter.techIcons,
+        html: item.node.html,
+      }),
+      win.body
+    )
+  }
+
   const info = data.info.edges.map(item => (
     <li key={item.node.frontmatter.title} className="infoItem">
       <button
         className="popupWindowLinkButton"
         style={{ cursor: "pointer" }}
-        onClick={() => {
-          const win = new WinBox({
-            title: item.node.frontmatter.title,
-            width: checkScreenWidth(),
-            height: checkScreenWidth(),
-            x: "center",
-            y: "center",
-            onfocus: function () {
-              this.removeClass("wb-no-focus")
-              this.addClass("wb-focus")
-            },
-            onblur: function () {
-              this.removeClass("wb-focus")
-              this.addClass("wb-no-focus")
-            },
-          })
-          ReactDOM.render(
-            React.createElement(PopupTerminalWindow, {
-              title: item.node.frontmatter.title,
-              popupImageSrc: item.node.frontmatter.popupImageSrc,
-              popupImageAlt: item.node.frontmatter.popupImageAlt,
-              popupGithubLink: item.node.frontmatter.popupGithubLink,
-              popupLiveLink: item.node.frontmatter.popupLiveLink,
-              techIcons: item.node.frontmatter.techIcons,
-              html: item.node.html,
-            }),
-            win.body
-          )
-        }}
+        onClick={() => createWinboxInstance(item)}
       >
         {item.node.frontmatter.listName}
       </button>
     </li>
   ))
 
-  const projects = data.projects.edges.map(item =>
-    item.node.frontmatter.title ? (
-      <li
-        key={item.node.frontmatter.title}
-        className={item.node.frontmatter.nameOfClass}
+  const projects = data.projects.edges.map(item => (
+    <li
+      key={item.node.frontmatter.title}
+      className={item.node.frontmatter.nameOfClass}
+    >
+      <button
+        className="popupWindowLinkButton"
+        style={{ cursor: "pointer" }}
+        onClick={() => createWinboxInstance(item)}
       >
-        <button
-          className="popupWindowLinkButton"
-          style={{ cursor: "pointer" }}
-          onClick={() => {
-            const win = new WinBox({
-              title: item.node.frontmatter.title,
-              width: checkScreenWidth(),
-              height: checkScreenWidth(),
-              x: "center",
-              y: "center",
-              onfocus: function () {
-                this.removeClass("wb-no-focus")
-                this.addClass("wb-focus")
-              },
-              onblur: function () {
-                this.removeClass("wb-focus")
-                this.addClass("wb-no-focus")
-              },
-            })
-            ReactDOM.render(
-              React.createElement(PopupTerminalWindow, {
-                title: item.node.frontmatter.title,
-                popupImageSrc: item.node.frontmatter.popupImageSrc,
-                popupImageAlt: item.node.frontmatter.popupImageAlt,
-                popupGithubLink: item.node.frontmatter.popupGithubLink,
-                popupLiveLink: item.node.frontmatter.popupLiveLink,
-                techIcons: item.node.frontmatter.techIcons,
-                html: item.node.html,
-              }),
-              win.body
-            )
-          }}
-        >
-          {item.node.frontmatter.listName}
-        </button>
-      </li>
-    ) : (
-      <li className="projects">{item.node.frontmatter.listName}</li>
-    )
-  )
+        {item.node.frontmatter.listName}
+      </button>
+    </li>
+  ))
 
   const contactItem = (
     <li className="infoItem">
