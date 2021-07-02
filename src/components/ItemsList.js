@@ -162,7 +162,10 @@ export default function ItemsList() {
           )
         }}
       >
-        📧 /Contact
+        <span role="img" aria-label="e-mail">
+          📧
+        </span>{" "}
+        /Contact
       </button>
     </li>
   )

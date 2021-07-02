@@ -17,8 +17,8 @@ export default function PopupTerminalWindow({
 }) {
   let link = ""
   techIcons = techIcons?.map(icon => (
-    <li className="techItem tooltip">
-      <span class="tooltiptext">{`${
+    <li className="techItem tooltip" key={icon}>
+      <span className="tooltiptext">{`${
         icon.charAt(0).toUpperCase() + icon.slice(1)
       }`}</span>
       <img
@@ -45,7 +45,7 @@ export default function PopupTerminalWindow({
           />
         </h1>
         <div className="popupTerminalWindowImageContainer">
-          {(link = popupLiveLink || popupGithubLink) ? (
+          {(link = popupLiveLink || popupGithubLink) ? ( // eslint-disable-line no-cond-assign
             <a href={link} target="_blank" rel="noopener noreferrer">
               <img
                 src={`/${popupImageSrc}`}
