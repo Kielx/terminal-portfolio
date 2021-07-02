@@ -162,7 +162,7 @@ export default function ItemsList() {
           )
         }}
       >
-        /Contact
+        📧 /Contact
       </button>
     </li>
   )

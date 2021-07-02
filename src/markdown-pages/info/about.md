@@ -1,5 +1,5 @@
 ---
-listName: "/About"
+listName: "👨‍💻 /About"
 title: "About me"
 popupImageSrc: "mojephoto.jpg"
 popupImageAlt: "Photo of myself rendered with ASCII characters"
