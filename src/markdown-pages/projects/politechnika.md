@@ -2,8 +2,8 @@
 nameOfClass: "projects-items"
 title: "C/C++ Assignments"
 listName: "/🎓 Politechnika"
-popupImageSrc: "cppASCII.png"
-popupImageAlt: "C++ ASCII icon"
+popupImageSrc: "cppLogo.svg"
+popupImageAlt: "C++ logo"
 popupGithubLink: "https://github.com/Kielx/Politechnika"
 techIcons: ["cplusplus", "c"]
 ---

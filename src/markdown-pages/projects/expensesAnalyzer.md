@@ -3,7 +3,7 @@ nameOfClass: "projects-items"
 listName: "/📈 Expenses Analyzer"
 title: "Expenses Analyzer"
 popupImageSrc: "expensesAnalyzer.png"
-popupImageAlt: "Expenses analyzer ASCII icon"
+popupImageAlt: "Expenses analyzer screenshot"
 popupGithubLink: "https://github.com/Kielx/expenses-analyzer"
 popupLiveLink: "https://kielx.github.io/expenses-analyzer/"
 techIcons: ["react", "html5", "css3", "bootstrap", "d3dotjs"]
