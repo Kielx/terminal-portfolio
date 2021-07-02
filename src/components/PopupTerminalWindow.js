@@ -17,7 +17,10 @@ export default function PopupTerminalWindow({
 }) {
   let link = ""
   techIcons = techIcons?.map(icon => (
-    <li className="techItem">
+    <li className="techItem tooltip">
+      <span class="tooltiptext">{`${
+        icon.charAt(0).toUpperCase() + icon.slice(1)
+      }`}</span>
       <img
         className="svgIcon"
         src={`https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/${icon}.svg`}

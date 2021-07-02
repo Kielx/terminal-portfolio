@@ -125,6 +125,11 @@
   width: 2rem;
 }
 
+.svgIcon:hover {
+  filter: invert(79%) sepia(59%) saturate(2824%) hue-rotate(360deg)
+    brightness(105%) contrast(104%);
+}
+
 .popupWindowLinkButton {
   align-items: normal;
   background-color: rgba(0, 0, 0, 0);
