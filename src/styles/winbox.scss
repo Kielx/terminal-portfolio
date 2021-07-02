@@ -225,6 +225,7 @@
   border-radius: 50%;
   margin-inline: 0.3rem;
   order: 3;
+  transition: filter 0.3s;
 }
 
 .wb-max {
@@ -235,6 +236,7 @@
   border-radius: 50%;
   margin-inline: 0.3rem;
   order: 2;
+  transition: filter 0.3s;
 }
 
 .wb-close {
@@ -246,6 +248,19 @@
   margin-inline: 0.3rem;
   margin-left: 10px;
   order: 1;
+  transition: filter 0.3s;
+}
+
+.wb-close:hover {
+  filter: brightness(70%);
+}
+
+.wb-min:hover {
+  filter: brightness(70%);
+}
+
+.wb-max:hover {
+  filter: brightness(70%);
 }
 
 .wb-full {
