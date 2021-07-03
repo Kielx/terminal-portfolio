@@ -2,21 +2,6 @@
 
 Terminal Portfolio is as the name suggests a terminal themed portfolio showcasing a bit about myself and my projects.
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -182,5 +167,5 @@ Project Link: [https://github.com/Kielx/expenses-analyzer](https://github.com/Ki
 [linkedin-url]: https://linkedin.com/in/Kielx
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNTA4Mjg1XX0=
+eyJoaXN0b3J5IjpbNzc5ODUwNjQ3XX0=
 -->
