@@ -270,6 +270,10 @@
   filter: brightness(70%);
 }
 
+.wb-full {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .wb-min {
     width: 20px;
