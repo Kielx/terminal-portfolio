@@ -1,4 +1,5 @@
 ---
+slug: "projects/phonebook"
 nameOfClass: "projects-items"
 title: "Phonebook"
 listName: "/☎️ Phonebook"

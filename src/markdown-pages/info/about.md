@@ -1,4 +1,5 @@
 ---
+slug: "/about"
 listName: "👨‍💻 /About"
 title: "About me"
 popupImageSrc: "mojephoto.jpg"

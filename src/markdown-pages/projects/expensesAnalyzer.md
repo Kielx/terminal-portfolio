@@ -1,4 +1,5 @@
 ---
+slug: "projects/expenses-analyzer"
 nameOfClass: "projects-items"
 listName: "/📈 Expenses Analyzer"
 title: "Expenses Analyzer"

@@ -1,4 +1,5 @@
 ---
+slug: "projects/politechnika"
 nameOfClass: "projects-items"
 title: "C/C++ Assignments"
 listName: "/🎓 Politechnika"

@@ -1,6 +1,5 @@
 .wb-body {
   background-color: var(--windowBg) !important;
-  padding: 1rem;
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
 }
@@ -50,6 +49,7 @@
 }
 
 .popupTerminaWindowContainer {
+  padding: 1rem;
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;

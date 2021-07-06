@@ -27,7 +27,7 @@ export default function Contact({ close }) {
   }
 
   return (
-    <div>
+    <div style={{ padding: "1rem" }}>
       <div>
         <h1>
           <Typewriter
