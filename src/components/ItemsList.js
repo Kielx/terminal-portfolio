@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 //importing winbox https://github.com/nextapps-de/winbox/issues/1
 import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
@@ -23,6 +23,7 @@ export default function ItemsList() {
               popupLiveLink
               techIcons
               title
+              slug
             }
             html
             fileAbsolutePath
@@ -43,6 +44,7 @@ export default function ItemsList() {
               popupLiveLink
               techIcons
               title
+              slug
             }
             html
             fileAbsolutePath
@@ -63,6 +65,7 @@ export default function ItemsList() {
               popupLiveLink
               techIcons
               title
+              slug
             }
             html
             fileAbsolutePath
@@ -75,10 +78,13 @@ export default function ItemsList() {
     return window.screen.width > 1000 ? "60%" : "100%"
   }
 
+  const checkScreenWidthMobile = () => {
+    return window.screen.width < 1024 ? true : false
+  }
+
   const createWinboxInstance = item => {
     const win = new WinBox({
       title: item.node.frontmatter.title,
-      modal: true,
       width: checkScreenWidth(),
       height: checkScreenWidth(),
       x: "center",
@@ -118,6 +124,18 @@ export default function ItemsList() {
     </li>
   ))
 
+  const infoMobile = data.info.edges.map(item => (
+    <li key={item.node.frontmatter.title} className="infoItem">
+      <Link
+        className="popupWindowLinkButton"
+        style={{ cursor: "pointer" }}
+        to={item.node.frontmatter.slug}
+      >
+        {item.node.frontmatter.listName}
+      </Link>
+    </li>
+  ))
+
   const projects = data.projects.edges.map(item => (
     <li
       key={item.node.frontmatter.title}
@@ -130,6 +148,21 @@ export default function ItemsList() {
       >
         {item.node.frontmatter.listName}
       </button>
+    </li>
+  ))
+
+  const projectsMobile = data.projects.edges.map(item => (
+    <li
+      key={item.node.frontmatter.title}
+      className={item.node.frontmatter.nameOfClass}
+    >
+      <Link
+        className="popupWindowLinkButton"
+        style={{ cursor: "pointer" }}
+        to={item.node.frontmatter.slug}
+      >
+        {item.node.frontmatter.listName}
+      </Link>
     </li>
   ))
 
@@ -171,10 +204,40 @@ export default function ItemsList() {
     </li>
   )
 
+  const mappedItems = () => {
+    return (
+      <>
+        <li>→ Info:</li> {info} {contactItem} <li>→ Projects:</li>
+        {projects} <li className="miniProject">→ Mini-Projects:</li>
+      </>
+    )
+  }
+
+  const mappedItemsMobile = () => {
+    return (
+      <>
+        <li>→ Info:</li> {infoMobile}{" "}
+        <li className="infoItem">
+          <Link
+            className="popupWindowLinkButton"
+            style={{ cursor: "pointer" }}
+            to="/contact"
+          >
+            <span role="img" aria-label="e-mail">
+              📧
+            </span>{" "}
+            /Contact
+          </Link>
+        </li>{" "}
+        <li>→ Projects:</li>
+        {projectsMobile} <li className="miniProject">→ Mini-Projects:</li>
+      </>
+    )
+  }
+
   return (
     <ul className="mappedItemsList">
-      <li>→ Info:</li> {info} {contactItem} <li>→ Projects:</li>
-      {projects} <li className="miniProject">→ Mini-Projects:</li>
+      {checkScreenWidthMobile() ? mappedItemsMobile() : mappedItems()}
     </ul>
   )
 }

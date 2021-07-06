@@ -1,4 +1,5 @@
 ---
+slug: "projects/etch-a-sketch"
 nameOfClass: "projects-items miniProjects"
 title: "Etch-a-sketch"
 listName: "/🎨 Etch-a-sketch"
