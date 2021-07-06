@@ -75,7 +75,7 @@ export default function ItemsList() {
     }
   `)
   const checkScreenWidth = () => {
-    return window.screen.width > 1000 ? "60%" : "100%"
+    return window.screen.width > 1000 ? "80%" : "100%"
   }
 
   const checkScreenWidthMobile = () => {

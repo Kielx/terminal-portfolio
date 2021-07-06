@@ -5,10 +5,8 @@ import Contact from "../components/Contact"
 
 const NotFoundPage = () => (
   <>
-    <Layout>
-      <Seo title="contact" />
-      <Contact></Contact>
-    </Layout>
+    <Seo title="contact" />
+    <Contact></Contact>
   </>
 )
 
