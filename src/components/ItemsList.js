@@ -78,6 +78,7 @@ export default function ItemsList() {
   const createWinboxInstance = item => {
     const win = new WinBox({
       title: item.node.frontmatter.title,
+      modal: true,
       width: checkScreenWidth(),
       height: checkScreenWidth(),
       x: "center",
