@@ -1,7 +1,7 @@
 ---
 slug: "projects/expenses-analyzer"
 nameOfClass: "projects-items"
-listName: "/📈 Expenses Analyzer"
+listName: "📈 /Expenses Analyzer"
 title: "Expenses Analyzer"
 popupImageSrc: "expensesAnalyzer.png"
 popupImageAlt: "Expenses analyzer screenshot"

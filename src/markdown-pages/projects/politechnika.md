@@ -2,7 +2,7 @@
 slug: "projects/politechnika"
 nameOfClass: "projects-items"
 title: "C/C++ Assignments"
-listName: "/🎓 Politechnika"
+listName: "🎓 /Politechnika"
 popupImageSrc: "cppLogo.svg"
 popupImageAlt: "C++ logo"
 popupGithubLink: "https://github.com/Kielx/Politechnika"

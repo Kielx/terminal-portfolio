@@ -2,7 +2,7 @@
 slug: "projects/phonebook"
 nameOfClass: "projects-items"
 title: "Phonebook"
-listName: "/☎️ Phonebook"
+listName: "☎️ /Phonebook"
 popupImageSrc: "phonebook.png"
 popupImageAlt: "Phonebook app"
 popupLiveLink: "https://fullstackopen-phonebook-api.herokuapp.com/"
