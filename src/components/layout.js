@@ -10,9 +10,11 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import "@fontsource/roboto-mono"
 import "../styles/styles.scss"
+import "../styles/layout.css"
 
-const MainLayout = ({ children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -33,8 +35,8 @@ const MainLayout = ({ children }) => {
   )
 }
 
-MainLayout.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default MainLayout
+export default Layout
