@@ -1,10 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 import ItemsList from "../components/ItemsList"
 import "../styles/styles.scss"
 import "../styles/winbox.scss"
 import "../styles/mainTerminalWindow.scss"
 
 const LsDisplay = ({ text }) => {
+  const isBrowser = typeof window !== "undefined"
+
   return (
     <div className="LsDisplayWindow">
       <div className="LsDisplayTaskbar">Cmd</div>
@@ -12,7 +14,7 @@ const LsDisplay = ({ text }) => {
         {text}
         <div className="break"></div>
       </h3>
-      <ItemsList></ItemsList>
+      {isBrowser ? <ItemsList></ItemsList> : ""}
     </div>
   )
 }
