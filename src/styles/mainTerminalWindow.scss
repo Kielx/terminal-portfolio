@@ -58,3 +58,8 @@
 .miniProjects {
   order: 3;
 }
+@media (max-width: 1024px) {
+  li {
+    padding-block: 4px;
+  }
+}
