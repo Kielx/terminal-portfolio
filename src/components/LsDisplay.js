@@ -4,12 +4,12 @@ import "../styles/styles.scss"
 import "../styles/winbox.scss"
 import "../styles/mainTerminalWindow.scss"
 
-const LsDisplay = ({ text, name, delay }) => {
+const LsDisplay = ({ text }) => {
   return (
     <div className="LsDisplayWindow">
       <div className="LsDisplayTaskbar">Cmd</div>
       <h3>
-        {name ? "~ $ls -la" : ""}
+        {text}
         <div className="break"></div>
       </h3>
       <ItemsList></ItemsList>
