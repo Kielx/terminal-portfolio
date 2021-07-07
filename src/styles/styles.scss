@@ -31,7 +31,13 @@ body {
 header {
   padding-left: 10vw;
   padding-top: 3vh;
-  min-height: 8vh;
+  min-height: 10%;
+}
+
+header {
+  h1 {
+    min-height: 100%;
+  }
 }
 
 h1 {
@@ -64,7 +70,7 @@ p {
 
 .container {
   width: 80vw;
-  min-height: 85%;
+  min-height: 80%;
   height: auto;
   margin: 3vh auto auto auto;
   display: flex;
@@ -166,6 +172,7 @@ footer {
   padding-left: 3vw;
   padding-bottom: 1vh;
   margin-top: auto;
+  min-height: 10%;
 }
 
 footer > a {
