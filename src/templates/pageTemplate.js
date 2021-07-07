@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import PopupTerminalWindow from "../components/PopupTerminalWindow"
 import "../styles/styles.scss"
+import Seo from "../components/seo"
+import Layout from "../components/layout"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -9,15 +11,20 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <PopupTerminalWindow
-      title={frontmatter.title}
-      popupImageSrc={frontmatter.popupImageSrc}
-      popupImageAlt={frontmatter.popupImageAlt}
-      popupGithubLink={frontmatter.popupGithubLink}
-      popupLiveLink={frontmatter.popupLiveLink}
-      techIcons={frontmatter.techIcons}
-      html={html}
-    ></PopupTerminalWindow>
+    <>
+      <Layout>
+        <Seo title={frontmatter.title}></Seo>
+        <PopupTerminalWindow
+          title={frontmatter.title}
+          popupImageSrc={frontmatter.popupImageSrc}
+          popupImageAlt={frontmatter.popupImageAlt}
+          popupGithubLink={frontmatter.popupGithubLink}
+          popupLiveLink={frontmatter.popupLiveLink}
+          techIcons={frontmatter.techIcons}
+          html={html}
+        ></PopupTerminalWindow>
+      </Layout>
+    </>
   )
 }
 

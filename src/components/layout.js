@@ -8,8 +8,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 import "@fontsource/roboto-mono"
 import "../styles/styles.scss"
 import "../styles/layout.css"
@@ -27,8 +25,6 @@ const Layout = ({ children }) => {
 
   return (
     <div className="mainContainer">
-      <Header siteTitle={data.site.siteMetadata?.title || `Portfolio`} />
-
       <main>{children}</main>
       <footer>© {new Date().getFullYear()} Krzysztof Pantak</footer>
     </div>
