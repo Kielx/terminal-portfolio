@@ -58,6 +58,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-preact`,
     // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`,
   ],
