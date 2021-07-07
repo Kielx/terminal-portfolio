@@ -4,7 +4,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-
+import "../styles/global.css"
+import "../styles/styles.scss"
+import "../styles/layout.css"
 import * as React from "react"
 import ReactDOM from "react-dom"
 import PropTypes from "prop-types"
@@ -16,9 +18,6 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import "@fontsource/roboto-mono"
-import "../styles/global.css"
-import "../styles/styles.scss"
-import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   /* const data = useStaticQuery(graphql`
