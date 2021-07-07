@@ -3,7 +3,6 @@ import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
-import "../styles/styles.scss"
 
 export default function PopupTerminalWindow({
   title,

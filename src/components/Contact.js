@@ -1,7 +1,6 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import { navigate } from "gatsby-link"
-import "../styles/styles.scss"
 import "../styles/contact.scss"
 
 export default function Contact({ close }) {

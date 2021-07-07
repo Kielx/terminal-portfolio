@@ -160,3 +160,11 @@ p {
 footer {
   margin-top: auto;
 }
+
+footer > a {
+  transition: color 0.4s ease-in-out;
+}
+
+footer > a:hover {
+  color: var(--linkText);
+}

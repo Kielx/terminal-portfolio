@@ -1,6 +1,5 @@
 import React from "react"
 import ItemsList from "../components/ItemsList"
-import "../styles/styles.scss"
 import "../styles/winbox.scss"
 import "../styles/mainTerminalWindow.scss"
 
