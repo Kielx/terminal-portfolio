@@ -58,32 +58,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
-    {
-      /* Include plugin */
-      resolve: "gatsby-omni-font-loader",
-
-      /* Plugin options */
-      options: {
-        /* Font loading mode */
-        mode: "async",
-
-        /* Enable font loading listener to handle FOUT */
-        enableListener: true,
-
-        /* Preconnect URL-s. This example is for Google Fonts */
-        preconnect: ["https://fonts.gstatic.com"],
-
-        /* Web fonts. File link should point to font CSS file. */
-        web: [
-          {
-            /* Exact name of the font as defied in @font-face CSS rule */
-            name: "Roboto Mono",
-            /* URL to the font CSS file with @font-face definition */
-            file: "https://fonts.googleapis.com/css2?family=Roboto+Mono",
-          },
-        ],
-      },
-    }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`,
   ],
 }
