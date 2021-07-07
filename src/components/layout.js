@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="mainContainer">
-      <main>{children}</main>
+      {children}
       <footer>
         © {new Date().getFullYear()} Krzysztof Pantak{" | "}
         <Link to="/contact">Contact</Link>

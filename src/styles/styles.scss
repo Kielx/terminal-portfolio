@@ -33,13 +33,6 @@ header {
   margin-top: 3vh;
 }
 
-footer {
-  background-color: var(--bg);
-  max-height: 5vh;
-  padding-left: 3vw;
-  margin-bottom: 1vh;
-}
-
 h1 {
   color: var(--primaryText);
   font-size: 50px;
@@ -70,8 +63,7 @@ p {
 
 .container {
   width: 80vw;
-  margin: auto;
-  min-height: 70vh;
+  margin: 10px auto auto auto;
   display: flex;
   justify-content: left;
   align-items: left;
@@ -158,6 +150,9 @@ p {
 }
 
 footer {
+  background-color: var(--bg);
+  padding-left: 3vw;
+  padding-bottom: 1vh;
   margin-top: auto;
 }
 
