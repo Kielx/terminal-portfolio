@@ -8,7 +8,7 @@ export default function sucess() {
   return (
     <Layout>
       <Seo title="Successfuly sent a message" />
-      <Header />
+      {typeof window !== "undefined" ? <Header /> : ""}
       <div className="container">
         <LsDisplay text="Successfully sent a contact message. Thank you!"></LsDisplay>
       </div>
