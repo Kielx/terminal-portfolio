@@ -4,8 +4,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-import "../styles/global.css"
+
 import "../styles/styles.scss"
+import "../styles/global.css"
 import "../styles/layout.css"
 import * as React from "react"
 import ReactDOM from "react-dom"
@@ -17,7 +18,6 @@ import Contact from "./Contact"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import "@fontsource/roboto-mono"
 
 const Layout = ({ children }) => {
   /* const data = useStaticQuery(graphql`
@@ -65,9 +65,6 @@ const Layout = ({ children }) => {
         )
       }}
     >
-      <span role="img" aria-label="e-mail">
-        📧
-      </span>{" "}
       Contact
     </button>
   )
@@ -77,7 +74,7 @@ const Layout = ({ children }) => {
       {children}
       <footer>
         © {new Date().getFullYear()} Krzysztof Pantak{" | "}
-        <Link to="/">🏠 Home</Link> {" | "}
+        <Link to="/">Home</Link> {" | "}
         {checkScreenWidthMobile() ? (
           <Link to="/contact">Contact</Link>
         ) : (
@@ -89,10 +86,7 @@ const Layout = ({ children }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="popupTerminalWindowLinkIcon">
-            <FontAwesomeIcon icon={faGithub} size="md" />
-            {` GitHub`}
-          </span>
+          GitHub
         </a>
       </footer>
     </div>
