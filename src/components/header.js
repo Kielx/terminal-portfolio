@@ -4,7 +4,9 @@ import Typewriter from "typewriter-effect"
 
 const Header = ({ siteTitle }) => {
   const [isLoaded, setIsLoaded] = useState(
-    sessionStorage.getItem("isLoaded") || false
+    typeof window !== "undefined"
+      ? sessionStorage.getItem("isLoaded") || false
+      : false
   )
 
   useEffect(() => {
