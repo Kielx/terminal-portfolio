@@ -1,19 +1,27 @@
 import React from "react"
 import ItemsList from "../components/ItemsList"
+import ItemsListMobile from "./ItemsListMobile"
 import "../styles/winbox.scss"
 import "../styles/mainTerminalWindow.scss"
 
 const LsDisplay = ({ text }) => {
-  const isBrowser = typeof window !== "undefined"
+  const checkscreenWidthMobile = () => {
+    if (typeof window !== "undefined") {
+      return window.screen.width < 1024 ? true : false
+    }
+  }
 
   return (
     <div className="LsDisplayWindow">
       <div className="LsDisplayTaskbar">Cmd</div>
-      <h3>
+      <h2 style={{ color: "inherit", fontSize: "1.1rem", paddingLeft: "4vw" }}>
         {text}
-        <div className="break"></div>
-      </h3>
-      {isBrowser ? <ItemsList></ItemsList> : ""}
+      </h2>
+      {checkscreenWidthMobile() ? (
+        <ItemsListMobile></ItemsListMobile>
+      ) : (
+        <ItemsList></ItemsList>
+      )}
     </div>
   )
 }
