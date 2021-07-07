@@ -9,7 +9,7 @@ const IndexPage = () => (
   <>
     <Seo title="Home" />
     <Layout>
-      <Header />
+      {typeof window !== "undefined" ? <Header /> : ""}
       <div className="container">
         <LsDisplay text="~ $ls -l" delay="natural"></LsDisplay>
       </div>
