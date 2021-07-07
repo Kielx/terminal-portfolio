@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import "@fontsource/roboto-mono"
+import "../styles/global.css"
 import "../styles/styles.scss"
 import "../styles/layout.css"
 

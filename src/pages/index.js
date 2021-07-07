@@ -6,13 +6,15 @@ import LsDisplay from "../components/LsDisplay"
 import Header from "../components/header"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <Seo title="Home" />
-    <Header />
-    <div className="container">
-      <LsDisplay text="~ $ls -l" delay="natural"></LsDisplay>
-    </div>
-  </Layout>
+    <Layout>
+      <Header />
+      <div className="container">
+        <LsDisplay text="~ $ls -l" delay="natural"></LsDisplay>
+      </div>
+    </Layout>
+  </>
 )
 
 export default IndexPage

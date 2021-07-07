@@ -63,14 +63,15 @@ p {
 
 .container {
   width: 80vw;
-  margin: 10px auto auto auto;
+  margin: 3vh auto auto auto;
   display: flex;
   justify-content: left;
   align-items: left;
 }
 
 .mainContainer {
-  min-height: 98vh;
+  min-height: 100%;
+  width: 100%;
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
