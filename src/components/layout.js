@@ -32,7 +32,9 @@ const Layout = ({ children }) => {
   `) */
 
   const checkScreenWidthMobile = () => {
-    return window.screen.width < 1024 ? true : false
+    if (typeof window !== `undefined`) {
+      return window.screen.width < 1024 ? true : false
+    }
   }
 
   const desktopButton = (
