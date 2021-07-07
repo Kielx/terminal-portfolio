@@ -45,6 +45,10 @@ Terminal styled portfolio showcasing my projects and a bit about myself.
 
 Distributed under the GNU Affero General Public License v3.0. See `LICENSE` for more information.
 
+## Acknowledgments
+
+Inspired by [Brad Traversy Terminal Style Landing Page](https://www.youtube.com/watch?v=jQCk2yo10YY)
+
 <!-- CONTACT -->
 ## Contact
 
