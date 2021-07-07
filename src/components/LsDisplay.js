@@ -9,10 +9,10 @@ const LsDisplay = ({ text }) => {
   return (
     <div className="LsDisplayWindow">
       <div className="LsDisplayTaskbar">Cmd</div>
-      <h3>
+      <h2>
         {text}
         <div className="break"></div>
-      </h3>
+      </h2>
       {isBrowser ? <ItemsList></ItemsList> : ""}
     </div>
   )
