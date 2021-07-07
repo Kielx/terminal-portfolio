@@ -16,8 +16,6 @@ import WinBox from "winbox/src/js/winbox"
 import "winbox/dist/css/winbox.min.css"
 import Contact from "./Contact"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Layout = ({ children }) => {
   /* const data = useStaticQuery(graphql`

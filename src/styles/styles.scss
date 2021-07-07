@@ -63,6 +63,7 @@ p {
 
 .container {
   width: 80vw;
+  height: auto;
   margin: 3vh auto auto auto;
   display: flex;
   justify-content: left;
@@ -71,6 +72,7 @@ p {
 
 .mainContainer {
   min-height: 100%;
+  width: auto;
   width: 100%;
   margin: 0;
   display: grid;
