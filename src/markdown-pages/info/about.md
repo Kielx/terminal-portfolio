@@ -30,8 +30,9 @@ techIcons: [
       ]
 ---
 
-Software Developer based in Kielce Poland 🇵🇱.
+## Hi there! I'm Krzysztof <img src="https://raw.githubusercontent.com/Kielx/Kielx/main/wave.gif" width="30px">
 
-CS Sophomore at Kielce University of Technology.
-
-EULEX Peacekeeping Mission in Kosovo Veteran, Strength Coach, Law Enforcer and a family man.
+Software Developer based in Kielce Poland 🇵🇱.<br>
+CS Sophomore at the Kielce University of Technology.<br>
+Passionate about Frontend, Backend, Cloud Technologies, and everything tech-related.<br>
+Also a Strength Coach and a family man.
