@@ -1,3 +1,23 @@
+:root {
+  --primaryText: #ffc600;
+  --secondaryText: #ccc;
+  --linkText: #047be3;
+  --bg: #1b2d3a;
+  --windowBg: #193549;
+  --focusBg: hsl(205, 51%, 16%);
+  --mainTerminalTaskbarText: white;
+}
+
+.light {
+  --primaryText: #444;
+  --secondaryText: #222;
+  --linkText: #047be3;
+  --bg: #ecf0f1;
+  --windowBg: #fff;
+  --focusBg: rgb(236, 236, 236);
+  --mainTerminalTaskbarText: #222;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,15 +26,6 @@
 
 html,
 body {
-  --primaryText: #ffc600;
-  --secondaryText: #ccc;
-  --linkText: #047be3;
-  --bg: #1b2d3a;
-  --windowBg: #193549;
-  --focusBg: hsl(205, 51%, 16%);
-  --mainTerminalTaskbarText: white;
-  background-color: var(--bg);
-
   background-color: var(--bg);
   color: var(--secondaryText);
   font-size: 18px;

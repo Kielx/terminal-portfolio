@@ -44,6 +44,13 @@ const Header = ({ siteTitle }) => {
           )}
         </h1>
       </div>
+      <button
+        onClick={() => {
+          document.documentElement.classList.toggle("light")
+        }}
+      >
+        Light
+      </button>
     </header>
   )
 }
