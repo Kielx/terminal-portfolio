@@ -5,11 +5,10 @@ import LsDisplay from "../components/LsDisplay"
 import Header from "../components/header"
 
 export default function sucess() {
-  const isBrowser = typeof window !== "undefined"
   return (
     <Layout>
       <Seo title="Successfuly sent a message" />
-      {isBrowser ? <Header /> : ""}
+      <Header />
       <div className="container">
         <LsDisplay text="Successfully sent a contact message. Thank you!"></LsDisplay>
       </div>
