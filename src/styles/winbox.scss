@@ -2,26 +2,29 @@
   background-color: var(--windowBg) !important;
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
+  transition: background-color 0.4s ease-in-out;
 }
 
 .winbox {
   border-radius: var(--radius);
-  border: 1px solid black;
+  border: 1px solid var(--borderColor);
 }
 
 .wb-no-focus {
   background-color: var(--windowBg) !important;
+  transition: background-color 0.4s ease-in-out;
   .wb-title {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--borderColor);
   }
 
   .wb-icon {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--borderColor);
   }
 }
 
 .wb-focus {
   background-color: var(--focusBg) !important;
+  transition: background-color 0.4s ease-in-out;
   .wb-title {
     border-bottom: 1px solid var(--primaryText);
   }
@@ -101,7 +104,7 @@
 
 .popupTerminalWindowLinkIcon {
   color: var(--primaryText);
-  transition: color 0.5s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .popupTerminalWindowLinkIcon:hover {
@@ -113,10 +116,21 @@
   top: 2px;
 }
 
+//Have to use this hack for computing color of svg icons
+//Needs to be adjusted separateley
+//https://codepen.io/sosuke/pen/Pjoqqp
 .svgIcon {
   filter: invert(84%) sepia(0%) saturate(3021%) hue-rotate(176deg)
     brightness(131%) contrast(60%);
   width: 2rem;
+  transition: filter 0.4s ease-in-out;
+}
+
+.light {
+  .svgIcon {
+    filter: invert(64%) sepia(26%) saturate(147%) hue-rotate(138deg)
+      brightness(85%) contrast(88%);
+  }
 }
 
 .svgIcon:hover {
@@ -124,6 +138,12 @@
     brightness(105%) contrast(104%);
 }
 
+.light {
+  .svgIcon:hover {
+    filter: invert(42%) sepia(82%) saturate(539%) hue-rotate(163deg)
+      brightness(95%) contrast(89%);
+  }
+}
 .popupWindowLinkButton {
   align-items: normal;
   background-color: rgba(0, 0, 0, 0);
@@ -142,7 +162,7 @@
   transform-origin: 0 0;
   width: auto;
   -moz-appearance: none;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .popupWindowLinkButton:active {
@@ -205,6 +225,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  color: var(--secondaryText);
 }
 
 .wb-icon {

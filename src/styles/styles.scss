@@ -1,3 +1,33 @@
+:root {
+  --primaryText: #ffc600;
+  --secondaryText: #ccc;
+  --linkText: #047be3;
+  --bg: #1b2d3a;
+  --windowBg: #193549;
+  --focusBg: hsl(205, 51%, 16%);
+  --borderColor: black;
+}
+
+/* .light {
+  --primaryText: #be100e;
+  --secondaryText: #20111b;
+  --linkText: #047be3;
+  --bg: #b9b8ab;
+  --windowBg: #d5ccba;
+  --focusBg: #c7bbae;
+  --borderColor: #94897e;
+} */
+
+.light {
+  --primaryText: #268bd2;
+  --secondaryText: #586e75;
+  --linkText: #dc322f;
+  --bg: #eee8d5;
+  --windowBg: #fdf6e3;
+  --focusBg: #eee8d5;
+  --borderColor: #94897e;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,21 +36,13 @@
 
 html,
 body {
-  --primaryText: #ffc600;
-  --secondaryText: #ccc;
-  --linkText: #047be3;
-  --bg: #1b2d3a;
-  --windowBg: #193549;
-  --focusBg: hsl(205, 51%, 16%);
-  --mainTerminalTaskbarText: white;
-  background-color: var(--bg);
-
   background-color: var(--bg);
   color: var(--secondaryText);
   font-size: 18px;
   line-height: 1.6;
   width: 100%;
   height: 100%;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .break {
@@ -31,13 +53,17 @@ body {
 header {
   margin-left: 10vw;
   margin-top: 3vh;
+  margin-right: 2vw;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
   color: var(--primaryText);
   font-size: 50px;
   letter-spacing: -2px;
-  margin-bottom: 20px;
+  transition: color 0.4s ease-in-out;
 }
 
 h2 {
@@ -149,6 +175,7 @@ p {
   text-align: center;
   padding: 5px;
   border-radius: 6px;
+  transition: background-color 0.4s ease-in-out;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -168,6 +195,7 @@ footer {
   padding-left: 3vw;
   padding-bottom: 1vh;
   margin-top: auto;
+  transition: background-color 0.4s ease-in-out;
 }
 
 footer > a {
@@ -176,4 +204,28 @@ footer > a {
 
 footer > a:hover {
   color: var(--linkText);
+}
+
+//REACT TOGGLE
+
+.react-toggle-track-x {
+  bottom: 8px !important;
+  right: 12px !important;
+}
+
+.react-toggle-track-check {
+  bottom: 8px !important;
+  left: 6px !important;
+}
+
+.react-toggle-track {
+  color: var(--primaryText) !important;
+  background-color: var(--windowBg) !important;
+}
+
+.react-toggle--checked {
+  color: var(--primaryText) !important;
+}
+.react-toggle--checked .react-toggle-track {
+  background-color: var(--windowBg) !important;
 }
