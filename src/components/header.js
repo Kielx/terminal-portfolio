@@ -48,15 +48,18 @@ const Header = ({ siteTitle }) => {
           )}
         </h1>
       </div>
-
-      <Toggle
-        defaultChecked={document.documentElement.classList.contains("light")}
-        icons={{
-          checked: <FontAwesomeIcon icon={faSun} />,
-          unchecked: <FontAwesomeIcon icon={faMoon} />,
-        }}
-        onChange={() => document.documentElement.classList.toggle("light")}
-      />
+      {typeof window !== "undefined" ? (
+        <Toggle
+          defaultChecked={document.documentElement.classList.contains("light")}
+          icons={{
+            checked: <FontAwesomeIcon icon={faSun} />,
+            unchecked: <FontAwesomeIcon icon={faMoon} />,
+          }}
+          onChange={() => document.documentElement.classList.toggle("light")}
+        />
+      ) : (
+        ""
+      )}
     </header>
   )
 }
