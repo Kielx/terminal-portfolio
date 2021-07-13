@@ -13,9 +13,23 @@ const Header = ({ siteTitle }) => {
       : false
   )
 
+  const [lightMode, setLightMode] = useState(
+    typeof window !== "undefined"
+      ? JSON.parse(localStorage.getItem("lightMode")) || false
+      : false
+  )
+
   useEffect(() => {
     sessionStorage.setItem("isLoaded", isLoaded)
   }, [isLoaded])
+
+  useEffect(() => {
+    localStorage.setItem("lightMode", lightMode)
+    setLightMode(lightMode)
+    lightMode
+      ? document.documentElement.classList.add("light")
+      : document.documentElement.classList.remove("light")
+  }, [lightMode])
 
   return (
     <header>
@@ -50,12 +64,14 @@ const Header = ({ siteTitle }) => {
       </div>
       {typeof window !== "undefined" ? (
         <Toggle
-          defaultChecked={document.documentElement.classList.contains("light")}
+          defaultChecked={lightMode}
           icons={{
             checked: <FontAwesomeIcon icon={faSun} />,
             unchecked: <FontAwesomeIcon icon={faMoon} />,
           }}
-          onChange={() => document.documentElement.classList.toggle("light")}
+          onChange={() => {
+            setLightMode(!lightMode)
+          }}
           aria-label="dark mode toggle"
         />
       ) : (
