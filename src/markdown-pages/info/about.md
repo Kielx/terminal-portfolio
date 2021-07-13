@@ -30,7 +30,7 @@ techIcons: [
       ]
 ---
 
-## Hi there! I'm Krzysztof <img src="https://raw.githubusercontent.com/Kielx/Kielx/main/wave.gif" width="30px">
+## Chris Pantak
 
 Software Developer based in Kielce Poland 🇵🇱.<br>
 CS Sophomore at the Kielce University of Technology.<br>
