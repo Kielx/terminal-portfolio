@@ -4,12 +4,12 @@
 
 .LsDisplayTaskbar {
   background-color: var(--windowBg);
-  color: var(--mainTerminalTaskbarText);
+  color: var(--secondaryText);
   width: 100%;
   padding: 3px;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--borderColor);
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   border-bottom: 1px solid var(--primaryText);
 }
 .LsDisplayWindow {
-  border: 1px solid black;
+  border: 1px solid var(--borderColor);
   background-color: var(--windowBg);
   width: 80vw;
   justify-content: flex-start;

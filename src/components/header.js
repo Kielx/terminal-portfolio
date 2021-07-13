@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import Typewriter from "typewriter-effect"
+import Toggle from "react-toggle"
+import "react-toggle/style.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 
 const Header = ({ siteTitle }) => {
   const [isLoaded, setIsLoaded] = useState(
@@ -44,13 +48,15 @@ const Header = ({ siteTitle }) => {
           )}
         </h1>
       </div>
-      <button
-        onClick={() => {
-          document.documentElement.classList.toggle("light")
+
+      <Toggle
+        defaultChecked={document.documentElement.classList.contains("light")}
+        icons={{
+          checked: <FontAwesomeIcon icon={faSun} />,
+          unchecked: <FontAwesomeIcon icon={faMoon} />,
         }}
-      >
-        Light
-      </button>
+        onChange={() => document.documentElement.classList.toggle("light")}
+      />
     </header>
   )
 }
