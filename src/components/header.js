@@ -56,6 +56,7 @@ const Header = ({ siteTitle }) => {
             unchecked: <FontAwesomeIcon icon={faMoon} />,
           }}
           onChange={() => document.documentElement.classList.toggle("light")}
+          aria-label="dark mode toggle"
         />
       ) : (
         ""
