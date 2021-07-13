@@ -11,11 +11,13 @@
   border-top-right-radius: var(--radius);
   border-bottom: 1px solid var(--borderColor);
   text-align: center;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .LsDisplayWindow:focus-within > .LsDisplayTaskbar {
   background-color: var(--focusBg);
   border-bottom: 1px solid var(--primaryText);
+  transition: background-color 0.4s ease-in-out;
 }
 .LsDisplayWindow {
   border: 1px solid var(--borderColor);
@@ -26,6 +28,7 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   padding-bottom: 3vh;
   border-radius: var(--radius);
+  transition: background-color 0.4s ease-in-out;
 
   h3 {
     padding: 10px;

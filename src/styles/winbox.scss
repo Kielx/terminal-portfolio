@@ -2,6 +2,7 @@
   background-color: var(--windowBg) !important;
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
+  transition: background-color 0.4s ease-in-out;
 }
 
 .winbox {
@@ -11,6 +12,7 @@
 
 .wb-no-focus {
   background-color: var(--windowBg) !important;
+  transition: background-color 0.4s ease-in-out;
   .wb-title {
     border-bottom: 1px solid var(--borderColor);
   }
@@ -22,6 +24,7 @@
 
 .wb-focus {
   background-color: var(--focusBg) !important;
+  transition: background-color 0.4s ease-in-out;
   .wb-title {
     border-bottom: 1px solid var(--primaryText);
   }
@@ -120,12 +123,13 @@
   filter: invert(84%) sepia(0%) saturate(3021%) hue-rotate(176deg)
     brightness(131%) contrast(60%);
   width: 2rem;
+  transition: filter 0.4s ease-in-out;
 }
 
 .light {
   .svgIcon {
-    filter: invert(5%) sepia(16%) saturate(2456%) hue-rotate(269deg)
-      brightness(99%) contrast(92%);
+    filter: invert(64%) sepia(26%) saturate(147%) hue-rotate(138deg)
+      brightness(85%) contrast(88%);
   }
 }
 
@@ -136,8 +140,8 @@
 
 .light {
   .svgIcon:hover {
-    filter: invert(9%) sepia(71%) saturate(7455%) hue-rotate(359deg)
-      brightness(96%) contrast(92%);
+    filter: invert(42%) sepia(82%) saturate(539%) hue-rotate(163deg)
+      brightness(95%) contrast(89%);
   }
 }
 .popupWindowLinkButton {

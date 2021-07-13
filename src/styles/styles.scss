@@ -8,13 +8,23 @@
   --borderColor: black;
 }
 
-.light {
+/* .light {
   --primaryText: #be100e;
   --secondaryText: #20111b;
   --linkText: #047be3;
   --bg: #b9b8ab;
   --windowBg: #d5ccba;
   --focusBg: #c7bbae;
+  --borderColor: #94897e;
+} */
+
+.light {
+  --primaryText: #268bd2;
+  --secondaryText: #839496;
+  --linkText: #dc322f;
+  --bg: #eee8d5;
+  --windowBg: #fdf6e3;
+  --focusBg: #eee8d5;
   --borderColor: #94897e;
 }
 
@@ -32,6 +42,7 @@ body {
   line-height: 1.6;
   width: 100%;
   height: 100%;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .break {
@@ -164,6 +175,7 @@ p {
   text-align: center;
   padding: 5px;
   border-radius: 6px;
+  transition: background-color 0.4s ease-in-out;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -183,6 +195,7 @@ footer {
   padding-left: 3vw;
   padding-bottom: 1vh;
   margin-top: auto;
+  transition: background-color 0.4s ease-in-out;
 }
 
 footer > a {
