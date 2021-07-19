@@ -85,8 +85,10 @@ const Layout = ({ children }) => {
         >
           GitHub
         </a>
-        {" | "}© {new Date().getFullYear()} Chris Pantak {" | "} Source code
-        distributed under GNU Affero General Public License v3.0
+        <span style={{ fontSize: "8px" }}>
+          {" | "}© {new Date().getFullYear()} Chris Pantak {" | "} Source code
+          distributed under GNU Affero General Public License v3.0
+        </span>
       </footer>
     </div>
   )
