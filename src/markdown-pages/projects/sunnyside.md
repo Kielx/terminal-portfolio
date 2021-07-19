@@ -5,7 +5,7 @@ title: "Sunnyside Agency landing page"
 listName: "🍒 /Sunnyside-Agency"
 popupImageSrc: "SunnysideSS.png"
 popupImageAlt: "Sunnyside agency screenshot"
-popupLiveLink: "https://kielx.github.io/Sunnyside/"
+popupLiveLink: "https://sunnyside.pantak.net/"
 popupGithubLink: "https://github.com/Kielx/Sunnyside"
 techIcons: [
         "html5",

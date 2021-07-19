@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Kielx Portfolio`,
-    description: `Kielx - Krzysztof Pantak, Software Developer portfolio site.`,
-    author: `@Krzysztof Pantak`,
+    title: `Chris Pantak Portfolio`,
+    description: `Chris Pantak Software Developer portfolio site.`,
+    author: `@Chris Pantak`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Krzysztof Pantak Portfolio`,
-        short_name: `Kielx Portfolio`,
+        name: `Chris Pantak Portfolio`,
+        short_name: `Chris Pantak Portfolio`,
         start_url: `/`,
         background_color: `#1b2d3a`,
         theme_color: `#1b2d3a`,

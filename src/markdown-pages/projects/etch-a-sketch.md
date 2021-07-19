@@ -5,7 +5,7 @@ title: "Etch-a-sketch"
 listName: "🎨 /Etch-a-sketch"
 popupImageSrc: "etch-a-sketch.png"
 popupImageAlt: "Etch a sketch app"
-popupLiveLink: "https://kielx.github.io/etch-a-sketch/"
+popupLiveLink: "https://etch-a-sketch.pantak.net/"
 popupGithubLink: "https://github.com/Kielx/etch-a-sketch"
 techIcons: [
         "html5",
