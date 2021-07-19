@@ -71,7 +71,6 @@ const Layout = ({ children }) => {
     <div className="mainContainer">
       {children}
       <footer>
-        © {new Date().getFullYear()} Krzysztof Pantak{" | "}
         <Link to="/">Home</Link> {" | "}
         {checkScreenWidthMobile() ? (
           <Link to="/contact">Contact</Link>
@@ -86,6 +85,8 @@ const Layout = ({ children }) => {
         >
           GitHub
         </a>
+        {" | "}© {new Date().getFullYear()} Chris Pantak {" | "} Source code
+        distributed under GNU Affero General Public License v3.0
       </footer>
     </div>
   )
