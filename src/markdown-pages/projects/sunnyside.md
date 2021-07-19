@@ -19,7 +19,7 @@ techIcons: [
 ### Overview
 
 The project was a challenge from [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
-I decided that my portfolio of projects is lacking something good-looking and well designed so coding that landing page would be a good experience and asset. 
+I decided that my portfolio of projects is lacking something good-looking and well designed so coding that landing page would be a good experience and asset.
 
 ### The challenge
 

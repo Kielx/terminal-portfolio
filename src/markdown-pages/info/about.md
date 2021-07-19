@@ -26,7 +26,8 @@ techIcons: [
         "archlinux",
         "linux",
         "windowsterminal",
-        "fontawesome"
+        "fontawesome",
+        "tailwindcss"
       ]
 ---
 
