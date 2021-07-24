@@ -20,14 +20,15 @@ techIcons: [
         "sass",
         "heroku",
         "netlify",
-        "amazonaws",
         "postman",
         "d3dotjs", 
         "archlinux",
         "linux",
         "windowsterminal",
         "fontawesome",
-        "tailwindcss"
+        "tailwindcss",
+        "amazondynamodb",
+        "amazonaws"
       ]
 ---
 

@@ -304,3 +304,25 @@
     height: 20px;
   }
 }
+
+.wb-body::-webkit-scrollbar {
+  width: 12px;
+}
+.wb-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.wb-focus {
+  .wb-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--primaryText);
+  }
+}
+.wb-no-focus {
+  .wb-body::-webkit-scrollbar-thumb {
+    background: var(--bg);
+  }
+}
+
+.wb-body::-webkit-scrollbar-corner {
+  background: transparent;
+}
