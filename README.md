@@ -188,10 +188,10 @@ Distributed under MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
 
-Idea inspiration by [Brad Traversy Terminal Style Landing Page](https://www.youtube.com/watch?v=jQCk2yo10YY)
-Dark color theme inspired by [Cobalt2 Theme Official by Wes Bos](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
-Light color theme inspired by [Solarized Light](https://en.wikipedia.org/wiki/Solarized_(color_scheme)2)
-Icons from [Simple Icons](https://github.com/simple-icons/simple-icons) and [Font Awesome](https://fontawesome.com/)
+- Idea inspiration by [Brad Traversy Terminal Style Landing Page](https://www.youtube.com/watch?v=jQCk2yo10YY)
+- Dark color theme inspired by [Cobalt2 Theme Official by Wes Bos](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
+- Light color theme inspired by [Solarized Light](https://en.wikipedia.org/wiki/Solarized_(color_scheme)2)
+- Icons from [Simple Icons](https://github.com/simple-icons/simple-icons) and [Font Awesome](https://fontawesome.com/)
 
 <!-- CONTACT -->
 ## Contact
