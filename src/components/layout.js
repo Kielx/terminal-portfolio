@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
   return (
     <div className="mainContainer">
       {children}
-      <footer>
+      <footer style={{ margin: "auto" }}>
         <Link to="/">Home</Link> {" | "}
         {checkScreenWidthMobile() ? (
           <Link to="/contact">Contact</Link>
@@ -85,9 +85,9 @@ const Layout = ({ children }) => {
         >
           GitHub
         </a>
-        <span style={{ fontSize: "8px" }}>
+        <span>
           {" | "}© {new Date().getFullYear()} Chris Pantak {" | "} Source code
-          distributed under GNU Affero General Public License v3.0
+          distributed under MIT License
         </span>
       </footer>
     </div>
