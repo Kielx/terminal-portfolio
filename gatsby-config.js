@@ -5,6 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Chris Pantak Portfolio`,
+    titleTemplate: `%s | Chris Pantak Portfolio`,
     description: `Chris Pantak Software Developer portfolio site. Terminal -command-line themed portfolio featuring projects ranging from robust Gatsby PWA's, React APPsand FullStack Web APPs utilizing cloud platforms to simple HTML, CSS and JavaScript sites.`,
     author: `@ChrisPantak`,
     url: "https://pantak.net",
