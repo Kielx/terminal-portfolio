@@ -7,7 +7,7 @@ import Header from "../components/header"
 
 const IndexPage = () => (
   <>
-    <Seo title="Home"/>
+    <Seo title="Terminal Portfolio" />
     <Layout>
       <Header />
       <div className="container">
