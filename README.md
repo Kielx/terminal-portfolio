@@ -149,7 +149,9 @@ All colors should be self-explanatory except for:
 
 ### Gatsby config
 
-You should update file `/gatsby-config.js` to match your project. You should change `siteMetada` and `gatsby-plugin-manifest` where you should provide an icon for PWA that should be included in `src/images/your-image.jpg`
+You should update file `/gatsby-config.js` to match your project. You should change `siteMetada` and `gatsby-plugin-manifest` where you should provide an icon for PWA that should be included in `src/images/your-image.jpg`. Finally be sure to change your GTAG in gatsby config - if you plan to use google analytics. Otherwise you are free to remove the plugin entireley by removing entry for `gatsby-plugin-google-gtag`
+
+
 
 ### Additional changes
 
@@ -180,6 +182,8 @@ Change typewriter `typeString` to your needs.
                   .start()
               }}
 ```
+
+
 
 <!-- LICENSE -->
 ## License
