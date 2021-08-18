@@ -1,6 +1,7 @@
 ---
 slug: "projects/strength-hub"
 nameOfClass: "projects-items"
+added: "2021-08-06"
 title: "Strength Hub"
 listName: "💪 /Strength Hub"
 popupImageSrc: "Strength-hub.png"

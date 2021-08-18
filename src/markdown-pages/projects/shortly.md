@@ -2,6 +2,7 @@
 slug: "projects/shortly"
 nameOfClass: "projects-items"
 title: "Shortly"
+added: "2021-08-08"
 listName: "🚧 /**Under Construction** - Shortly"
 popupImageSrc: "Shortly.webp"
 popupImageAlt: "Shortly URL shortener screenshot"

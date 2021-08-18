@@ -1,6 +1,7 @@
 ---
 slug: "projects/country-quiz"
 nameOfClass: "projects-items"
+added: "2021-08-07"
 title: "Country Quiz"
 listName: "🌎 /Country Quiz"
 popupImageSrc: "country-quiz.webp"

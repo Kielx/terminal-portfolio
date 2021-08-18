@@ -1,5 +1,6 @@
 ---
 slug: "projects/sunnyside"
+added: "2021-08-02"
 nameOfClass: "projects-items miniProjects"
 title: "Sunnyside Agency landing page"
 listName: "🍒 /Sunnyside-Agency"

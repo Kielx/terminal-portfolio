@@ -1,5 +1,6 @@
 ---
 slug: "projects/etch-a-sketch"
+added: "2021-08-01"
 nameOfClass: "projects-items miniProjects"
 title: "Etch-a-sketch"
 listName: "🎨 /Etch-a-sketch"

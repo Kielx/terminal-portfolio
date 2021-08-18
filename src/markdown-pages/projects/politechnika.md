@@ -1,5 +1,6 @@
 ---
 slug: "projects/politechnika"
+added: "2021-08-03"
 nameOfClass: "projects-items"
 title: "C/C++ Assignments"
 listName: "🎓 /C/C++ Assignments"

@@ -11,7 +11,9 @@ import PopupTerminalWindow from "../components/PopupTerminalWindow"
 export default function ItemsList() {
   const data = useStaticQuery(graphql`
     query {
-      all: allMarkdownRemark {
+      all: allMarkdownRemark(
+        sort: { fields: [frontmatter___added, frontmatter___title], order: ASC }
+      ) {
         edges {
           node {
             frontmatter {
@@ -32,6 +34,10 @@ export default function ItemsList() {
       }
       projects: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "//projects/[^/]+$/" } }
+        sort: {
+          fields: [frontmatter___added, frontmatter___title]
+          order: DESC
+        }
       ) {
         edges {
           node {
