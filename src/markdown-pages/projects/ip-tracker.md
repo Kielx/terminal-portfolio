@@ -19,6 +19,12 @@ techIcons: [
 ### Overview
 
 The project was a solution to <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0" target="_blank" rel="noopener"><span>IP-Tracker challenge.</span></a>
+<div align="center">
+<video width="400" height="320" controls autoplay muted preload="none" loop>
+  <source src="IP-tracker-view.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
 ### The challenge
 
