@@ -1,6 +1,7 @@
 ---
 slug: "projects/phonebook"
 added: "2021-08-04"
+video: "false"
 nameOfClass: "projects-items"
 title: "Phonebook"
 listName: "☎️ /Phonebook"

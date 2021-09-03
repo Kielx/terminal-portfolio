@@ -8,6 +8,7 @@ export default function PopupTerminalWindow({
   title,
   popupImageAlt,
   popupText,
+  video,
   popupImageSrc,
   popupGithubLink,
   popupLiveLink,
@@ -43,23 +44,40 @@ export default function PopupTerminalWindow({
             }}
           />
         </h1>
-        <div className="popupTerminalWindowImageContainer">
-          {(link = popupLiveLink || popupGithubLink) ? ( // eslint-disable-line no-cond-assign
-            <a href={link} target="_blank" rel="noopener noreferrer">
+        {video === "false" ? (
+          <div className="popupTerminalWindowImageContainer">
+            {(link = popupLiveLink || popupGithubLink) ? ( // eslint-disable-line no-cond-assign
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={`/${popupImageSrc}`}
+                  className="popupTerminaWindowImage"
+                  alt={popupImageAlt}
+                ></img>
+              </a>
+            ) : (
               <img
                 src={`/${popupImageSrc}`}
                 className="popupTerminaWindowImage"
                 alt={popupImageAlt}
               ></img>
-            </a>
-          ) : (
-            <img
-              src={`/${popupImageSrc}`}
-              className="popupTerminaWindowImage"
-              alt={popupImageAlt}
-            ></img>
-          )}
-        </div>
+            )}
+          </div>
+        ) : (
+          <div className="popupTerminalWindowImageContainer">
+            <video
+              width="100%"
+              height="100%"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        )}
 
         {popupGithubLink || popupLiveLink ? (
           <div className="popupTerminalWindowLinkIcons">

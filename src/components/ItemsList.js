@@ -26,6 +26,7 @@ export default function ItemsList() {
               techIcons
               title
               slug
+              video
             }
             html
             fileAbsolutePath
@@ -51,6 +52,7 @@ export default function ItemsList() {
               techIcons
               title
               slug
+              video
             }
             html
             fileAbsolutePath
@@ -72,6 +74,7 @@ export default function ItemsList() {
               techIcons
               title
               slug
+              video
             }
             html
             fileAbsolutePath
@@ -109,6 +112,7 @@ export default function ItemsList() {
         title: item.node.frontmatter.title,
         popupImageSrc: item.node.frontmatter.popupImageSrc,
         popupImageAlt: item.node.frontmatter.popupImageAlt,
+        video: item.node.frontmatter.video,
         popupGithubLink: item.node.frontmatter.popupGithubLink,
         popupLiveLink: item.node.frontmatter.popupLiveLink,
         techIcons: item.node.frontmatter.techIcons,

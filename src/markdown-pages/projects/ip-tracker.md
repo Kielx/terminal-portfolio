@@ -3,6 +3,7 @@ slug: "projects/ip-tracker"
 nameOfClass: "projects-items"
 title: "IP Tracker"
 added: "2021-08-24"
+video: "/IP-tracker-view.mp4"
 listName: "🎯 /IP Tracker"
 popupImageSrc: "ip-tracker.webp"
 popupImageAlt: "IP Tracker screenshot"
@@ -18,18 +19,11 @@ techIcons: [
 
 ### Overview
 
+The challenge consisted of three external API's usage, state management, responsive layout all wrapped in a single-page React App.
 The project was a solution to <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0" target="_blank" rel="noopener"><span>IP-Tracker challenge.</span></a>
-<div align="center">
-<video width="80%" height="30%" controls autoplay muted preload="none" loop playsinline>
-  <source src="/IP-tracker-view.mp4" type="video/mp4">
-  <source src="/IP-tracker-view.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-</div>
-
 ### The challenge
 
-The challenge consisted of three external API's usage, state management, responsive layout all wrapped in a single-page React App.
+
 User stories that needed to be fulfilled:
 <ul>
 <li>-View the optimal layout for the site depending on their device's screen size</li>
