@@ -15,6 +15,7 @@ export default function Template({
         <Seo title={frontmatter.title}></Seo>
         <PopupTerminalWindow
           title={frontmatter.title}
+          video={frontmatter.video}
           popupImageSrc={frontmatter.popupImageSrc}
           popupImageAlt={frontmatter.popupImageAlt}
           popupGithubLink={frontmatter.popupGithubLink}
@@ -40,6 +41,7 @@ export const pageQuery = graphql`
         popupLiveLink
         techIcons
         title
+        video
       }
     }
   }
