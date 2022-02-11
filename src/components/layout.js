@@ -86,8 +86,8 @@ const Layout = ({ children }) => {
           GitHub
         </a>
         <span>
-          {" | "}© 2021-{new Date().getFullYear()} Chris Pantak {" | "} Source
-          code distributed under MIT License
+          {" | "}© 2021-{new Date().getFullYear()} Krzysztof Pantak {" | "}{" "}
+          Source code distributed under MIT License
         </span>
       </footer>
     </div>

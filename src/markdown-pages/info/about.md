@@ -33,7 +33,7 @@ techIcons: [
       ]
 ---
 
-## Chris Pantak
+## Krzysztof Pantak
 
 Software Developer based in Kielce Poland 🇵🇱.<br>
 CS Sophomore at the Kielce University of Technology.<br>

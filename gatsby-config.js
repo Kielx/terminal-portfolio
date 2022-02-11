@@ -4,13 +4,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Chris Pantak Portfolio`,
-    titleTemplate: `%s | Chris Pantak Portfolio`,
-    description: `Chris Pantak Software Developer portfolio site. Terminal -command-line themed portfolio featuring projects ranging from robust Gatsby PWA's, React APPsand FullStack Web APPs utilizing cloud platforms to simple HTML, CSS and JavaScript sites.`,
-    author: `@ChrisPantak`,
+    title: `Krzysztof Pantak Portfolio`,
+    titleTemplate: `%s | Krzysztof Pantak Portfolio`,
+    description: `Terminal -command-line themed portfolio featuring projects ranging from robust Gatsby PWA's, React APPs and FullStack Web APPs utilizing cloud platforms to simple HTML, CSS and JavaScript sites.`,
+    author: `@KrzysztofPantak`,
     url: "https://pantak.net",
     image: "/PortfolioSS-sm.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@ChrisPantak",
+    twitterUsername: "@KrzysztofPantak",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Chris Pantak Portfolio`,
-        short_name: `Chris Pantak Portfolio`,
+        name: `Krzysztof Pantak Portfolio`,
+        short_name: `Krzysztof Pantak Portfolio`,
         start_url: `/`,
         background_color: `#1b2d3a`,
         theme_color: `#1b2d3a`,
