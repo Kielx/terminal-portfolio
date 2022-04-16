@@ -80,6 +80,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+This repo was created and designed to serve as my personal portfolio. Hovewer you can clone and use it as you see fit. 
 Now that the portfolio is installed you can run it locally and make it your own. Where do you start?
 
 ### Projects
