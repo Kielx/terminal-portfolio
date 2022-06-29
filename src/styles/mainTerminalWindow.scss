@@ -3,6 +3,9 @@
 }
 
 .LsDisplayTaskbar {
+  display: flex;
+  position: relative;
+  justify-content: center;
   background-color: var(--windowBg);
   color: var(--secondaryText);
   width: 100%;
