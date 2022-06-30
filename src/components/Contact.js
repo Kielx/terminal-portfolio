@@ -26,9 +26,9 @@ export default function Contact({ close }) {
   }
 
   return (
-    <div style={{ padding: "1rem" }}>
-      <div>
-        <h1>
+    <div className="contactContainer">
+      <div style={{ margin: "auto", minWidth: "100%" }}>
+        <h1 className="contactH1">
           <Typewriter
             onInit={typewriter => {
               typewriter

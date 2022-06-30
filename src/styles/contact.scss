@@ -67,3 +67,25 @@ label {
 input:focus {
   border-radius: 0px;
 }
+
+.contactH1 {
+ padding-bottom: 2rem;
+ text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+  .contactH1 {
+    text-align: left;
+  }
+}
+
+.contactContainer {
+  padding: 1rem;
+  display: flex 
+}
+
+@media screen and (min-width: 425px) {
+  .contactContainer {
+    padding: 2rem;
+  }
+}

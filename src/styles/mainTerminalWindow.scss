@@ -22,10 +22,12 @@
   border-bottom: 1px solid var(--primaryText);
   transition: background-color 0.4s ease-in-out;
 }
+
 .LsDisplayWindow {
   border: 1px solid var(--borderColor);
   background-color: var(--windowBg);
-  width: 80vw;
+  width: 95%;
+  margin: auto;
   justify-content: flex-start;
   min-height: 60vh;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -42,6 +44,15 @@
     white-space: pre-wrap;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .LsDisplayWindow {
+    width: 80%;
+  }
+  
+}
+
+
 
 .mappedItemsList {
   margin-left: 15px;

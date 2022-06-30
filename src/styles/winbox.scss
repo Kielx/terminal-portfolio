@@ -44,8 +44,10 @@
   }
 }
 
+
+
 .popupTerminaWindowContainer {
-  padding: 1rem;
+  padding: 2rem;
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -56,6 +58,12 @@
 
   column-gap: 2vw;
   row-gap: 2vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .popupTerminaWindowContainer {
+    padding: 1.5rem;
+  }
 }
 
 .popupTerminalWindowImageContainer {
@@ -88,7 +96,7 @@
   display: inline-flex;
   list-style: none;
   flex-wrap: wrap;
-  padding-right: 3rem;
+  padding-right: 1rem;
 }
 
 .techItemsList > li {
