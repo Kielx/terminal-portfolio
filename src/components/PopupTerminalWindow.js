@@ -30,8 +30,11 @@ export default function PopupTerminalWindow({
   ))
 
   return (
-    <div>
-      <div className="popupTerminaWindowContainer">
+    <>
+      <div
+        className="popupTerminaWindowContainer"
+        style={{ backgroundImage: `url(${popupImageSrc})` }}
+      >
         <h1 className="popupTerminaWindowHeader">
           <Typewriter
             onInit={typewriter => {
@@ -130,6 +133,6 @@ export default function PopupTerminalWindow({
           )}
         </div>
       </div>
-    </div>
+    </>
   )
 }

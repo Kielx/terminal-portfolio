@@ -48,16 +48,24 @@
 
 .popupTerminaWindowContainer {
   padding: 2rem;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header header header"
-    "image text text text"
-    "linkIcons text text text";
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-attachment: scroll;
+}
 
-  column-gap: 2vw;
-  row-gap: 2vh;
+.popupTerminaWindowContainer::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: var(--windowBackgroundImageColor);
 }
 
 @media only screen and (max-width: 600px) {
@@ -71,24 +79,33 @@
   grid-area: image;
   place-items: center center;
   place-self: center center;
+  position: relative;
 }
+
+@media screen and (min-width: 769px) { 
+ .popupTerminalWindowImageContainer {
+  display: none;
+}}
+
 .popupTerminaWindowImage {
   width: 100%;
-  height: auto;
   object-fit: contain !important;
   margin: auto;
   border-radius: var(--radius);
 }
 
 .popupTerminaWindowHeader {
+  position: relative;
   grid-area: header;
 }
 
 .popupTerminaWindowTextContainer {
+  position: relative;
   grid-area: text;
 }
 
 .popupTerminalWindowFooter {
+  position: relative;
   grid-area: footer;
 }
 
@@ -104,6 +121,7 @@
 }
 
 .popupTerminalWindowLinkIcons {
+  position: relative;
   grid-area: linkIcons;
   display: flex;
   justify-content: space-around;
@@ -214,7 +232,7 @@
   }
 
   .popupTerminalWindowImageContainer > * {
-    width: 60%;
+    width: 100%;
   }
 
   .popupTerminalWindowLinkIcons {
