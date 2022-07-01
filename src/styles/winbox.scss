@@ -3,11 +3,14 @@
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
   transition: background-color 0.4s ease-in-out;
+  
 }
 
 .winbox {
   border-radius: var(--radius);
   border: 1px solid var(--borderColor);
+  min-width: 650px;
+  min-height: 650px;
 }
 
 .wb-no-focus {
@@ -83,10 +86,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 769px) { 
- .popupTerminalWindowImageContainer {
-  display: none;
-}}
+
 
 .popupTerminaWindowImage {
   width: auto;
