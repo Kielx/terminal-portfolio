@@ -76,6 +76,7 @@
 
 .popupTerminalWindowImageContainer {
   display: grid;
+  max-height: 40vh;
   grid-area: image;
   place-items: center center;
   place-self: center center;
@@ -88,7 +89,8 @@
 }}
 
 .popupTerminaWindowImage {
-  width: 100%;
+  width: auto;
+  max-height: 40vh;
   object-fit: contain !important;
   margin: auto;
   border-radius: var(--radius);
@@ -96,6 +98,7 @@
 
 .popupTerminaWindowHeader {
   position: relative;
+  padding-bottom: 0.8rem;
   grid-area: header;
 }
 
@@ -124,7 +127,8 @@
   position: relative;
   grid-area: linkIcons;
   display: flex;
-  justify-content: space-around;
+  gap: 1rem;
+  padding: 0.8rem 0;
   align-items: center;
 }
 
