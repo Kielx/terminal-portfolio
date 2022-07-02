@@ -6,6 +6,8 @@
   --windowBg: #193549;
   --focusBg: hsl(205, 51%, 16%);
   --borderColor: black;
+  --windowBackgroundImageColor: rgba(25,45,58,0.95);  
+  --blurRadius: 13px;
 }
 
 /* .light {
@@ -26,6 +28,8 @@
   --windowBg: #fdf6e3;
   --focusBg: #eee8d5;
   --borderColor: #94897e;
+  --windowBackgroundImageColor: rgba(238,232,213,0.8); 
+  --blurRadius: 30px;
 }
 
 * {
@@ -56,7 +60,7 @@ header {
   margin-right: 2vw;
   display: inline-flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 h1 {
@@ -91,7 +95,7 @@ p {
 }
 
 .container {
-  width: 80vw;
+  width: 100%;
   min-height: 85%;
   height: auto;
   margin: 3vh auto auto auto;
@@ -104,9 +108,10 @@ p {
   min-height: 100%;
   width: auto;
   width: 100%;
-  margin: 0;
+  margin: auto;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto;
+  max-width: 1280px;
 }
 
 .hidden {

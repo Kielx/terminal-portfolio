@@ -17,6 +17,7 @@ const LsDisplay = ({ text }) => {
       </div>
       <h2>
         {text}
+        {isBrowser && window.innerWidth > 1024 ? "a" : ""}
         <div className="break"></div>
       </h2>
       {isBrowser ? <ItemsList></ItemsList> : ""}

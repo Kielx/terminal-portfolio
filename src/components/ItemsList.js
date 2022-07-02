@@ -27,6 +27,7 @@ export default function ItemsList() {
               title
               slug
               video
+              added
             }
             html
             fileAbsolutePath
@@ -53,6 +54,7 @@ export default function ItemsList() {
               title
               slug
               video
+              added
             }
             html
             fileAbsolutePath
@@ -75,6 +77,7 @@ export default function ItemsList() {
               title
               slug
               video
+              added
             }
             html
             fileAbsolutePath
@@ -150,14 +153,28 @@ export default function ItemsList() {
     <li
       key={item.node.frontmatter.title}
       className={item.node.frontmatter.nameOfClass}
+      style={{ display: "flex", alignItems: "center", width: "100%" }}
     >
       <button
         className="popupWindowLinkButton"
-        style={{ cursor: "pointer" }}
+        style={{ cursor: "pointer", width: "30%" }}
         onClick={() => createWinboxInstance(item)}
       >
         {item.node.frontmatter.listName}
       </button>
+      <span
+        style={{
+          fontSize: "x-small",
+          paddingLeft: "0.5rem",
+          textJustify: "right",
+          width: "70%",
+        }}
+      >
+        {`lrwxr-xr-x 1 kielx admin ${item.node.frontmatter.added} ${item.node.frontmatter.slug} -> `}
+        <a href={item.node.frontmatter.popupGithubLink}>
+          {item.node.frontmatter.popupGithubLink}
+        </a>
+      </span>
     </li>
   ))
 

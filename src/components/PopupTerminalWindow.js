@@ -30,8 +30,11 @@ export default function PopupTerminalWindow({
   ))
 
   return (
-    <div>
-      <div className="popupTerminaWindowContainer">
+    <>
+      <div
+        className="popupTerminaWindowContainer"
+        style={{ backgroundImage: `url(${popupImageSrc})` }}
+      >
         <h1 className="popupTerminaWindowHeader">
           <Typewriter
             onInit={typewriter => {
@@ -65,13 +68,14 @@ export default function PopupTerminalWindow({
         ) : (
           <div className="popupTerminalWindowImageContainer">
             <video
-              width="100%"
               height="100%"
+              width="100%"
               controls
               autoplay
               muted
               loop
               playsinline
+              className="popupTerminaWindowImage"
             >
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
@@ -130,6 +134,6 @@ export default function PopupTerminalWindow({
           )}
         </div>
       </div>
-    </div>
+    </>
   )
 }
