@@ -52,14 +52,22 @@ export default function PopupTerminalWindow({
             {(link = popupLiveLink || popupGithubLink) ? ( // eslint-disable-line no-cond-assign
               <a href={link} target="_blank" rel="noopener noreferrer">
                 <img
-                  src={`/${popupImageSrc}`}
+                  src={`${
+                    /^https/.test(popupImageSrc)
+                      ? popupImageSrc
+                      : "/" + popupImageSrc
+                  }`}
                   className="popupTerminaWindowImage"
                   alt={popupImageAlt}
                 ></img>
               </a>
             ) : (
               <img
-                src={`/${popupImageSrc}`}
+                src={`${
+                  /^https/.test(popupImageSrc)
+                    ? popupImageSrc
+                    : "/" + popupImageSrc
+                }`}
                 className="popupTerminaWindowImage"
                 alt={popupImageAlt}
               ></img>
