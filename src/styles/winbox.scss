@@ -69,6 +69,7 @@
   bottom: 0px;
   left: 0px;
   background-color: var(--windowBackgroundImageColor);
+  backdrop-filter: blur(var(--blurRadius));
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,6 +85,7 @@
   place-items: center center;
   place-self: center center;
   position: relative;
+
 }
 
 
@@ -91,6 +93,7 @@
 .popupTerminaWindowImage {
   width: auto;
   max-height: 40vh;
+  max-width: 95%;
   object-fit: contain !important;
   margin: auto;
   border-radius: var(--radius);
