@@ -307,14 +307,48 @@
 
 .wb-close:hover {
   filter: brightness(70%);
+  content: "dupa"
+}
+
+.wb-close:hover::before {
+  color: white;
+  content: "x";
+  font-size: 12px;
+  font-weight: 900;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  transform: translate(-50%, -50%);
 }
 
 .wb-min:hover {
   filter: brightness(70%);
 }
 
+.wb-min:hover::before {
+  color: white;
+  content: "-";
+  font-size: 13px;
+  font-weight: 900;
+  position: absolute;
+  top: 45.8%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
 .wb-max:hover {
   filter: brightness(70%);
+}
+
+.wb-max:hover::before {
+  color: white;
+  content: "+";
+  font-size: 12px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wb-full {
