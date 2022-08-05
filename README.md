@@ -62,6 +62,7 @@ To get a local copy up and running follow these simple steps.
 
   ```sh
   npm install npm@latest -g
+  npm install --global yarn
   ```
 
 ### Installation
@@ -75,7 +76,7 @@ To get a local copy up and running follow these simple steps.
 2. Install NPM packages
 
    ```sh
-   npm install
+   yarn install
    ```
 
 <!-- USAGE EXAMPLES -->
