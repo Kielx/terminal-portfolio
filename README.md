@@ -153,7 +153,17 @@ All colors should be self-explanatory except for:
 
 You should update file `/gatsby-config.js` to match your project. You should change `siteMetada` and `gatsby-plugin-manifest` where you should provide an icon for PWA that should be included in `src/images/your-image.jpg`. Finally be sure to change your GTAG in gatsby config - if you plan to use google analytics. Otherwise you are free to remove the plugin entireley by removing entry for `gatsby-plugin-google-gtag`
 
+### ENV Variables
 
+You can set environment variables in `.env.development` file for local development, and `.env.production` for production.
+Also you will need to set them up in netlify if you plan to deploy to their hosting. 
+
+```sh
+GATSBY_AWS_CONTACT_FORM_API_URL = 'Your AWS API form url' - this is the url of the form that will be used to send emails from the contact form.
+GATSBY_AWS_CONTACT_FORM_X_API_KEY = 'Your AWS API form key' - this is the key of the form that will be used to send emails from the contact form.
+GATSBY_GOOGLE_GTAG = 'Your Google GTAG' - this is the GTAG that will be used to track your site if you decide to use google analytics.
+NODE_VERSION = '14' - this is the node version that will be used to build your project. This variable is only needed when you are using netlify.
+```
 
 ### Additional changes
 
