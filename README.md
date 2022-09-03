@@ -153,6 +153,14 @@ All colors should be self-explanatory except for:
 
 You should update file `/gatsby-config.js` to match your project. You should change `siteMetada` and `gatsby-plugin-manifest` where you should provide an icon for PWA that should be included in `src/images/your-image.jpg`. Finally be sure to change your GTAG in gatsby config - if you plan to use google analytics. Otherwise you are free to remove the plugin entireley by removing entry for `gatsby-plugin-google-gtag`
 
+### Contact Form
+There are many services that you can use to run your contact form.
+In my example, I used AWS API Gateway + AWS Lambda Function + AWS SES because it's the cheapest of all the options and scales well. It isn't the easiest option to set up however. 
+For a detailed guide on how to set up and use the contact form you can use the following [link](
+https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/)
+
+Alternatively, you can use Twilio Sendgrid or capture the form directly from Netlify forms if you host your version there.
+
 ### ENV Variables
 
 You can set environment variables in `.env.development` file for local development, and `.env.production` for production.
