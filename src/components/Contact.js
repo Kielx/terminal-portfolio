@@ -2,13 +2,11 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import { navigate } from "gatsby-link"
 import "../styles/contact.scss"
+import Sending from "./Sending"
 
 export default function Contact({ close }) {
   const [state, setState] = React.useState({})
-  const [
-    disableButtonWhenSendingContactForm,
-    setDisableButtonWhenSendingContactForm,
-  ] = React.useState(false)
+  const [messageSending, setMessageSending] = React.useState(true)
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -16,17 +14,17 @@ export default function Contact({ close }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setDisableButtonWhenSendingContactForm(true)
+    setMessageSending(true)
     const url = `/.netlify/functions/contact`
     fetch(url, {
       method: "POST",
       body: JSON.stringify(state),
     })
       .then(response => {
-        setDisableButtonWhenSendingContactForm(false)
-        response.status === 200
+        response.ok
           ? navigate("/success")
           : alert("An error occured while trying to send contact message!")
+        setMessageSending(false)
       })
       .then(close)
   }
@@ -86,9 +84,15 @@ export default function Contact({ close }) {
             rows="3"
             onChange={handleChange}
           ></textarea>
-          <button type="submit" disabled={disableButtonWhenSendingContactForm}>
-            Send
-          </button>
+          {messageSending ? (
+            <button type="submit" disabled={messageSending}>
+              <Sending />
+            </button>
+          ) : (
+            <button type="submit" disabled={messageSending}>
+              Send
+            </button>
+          )}
         </form>
       </div>
     </div>
