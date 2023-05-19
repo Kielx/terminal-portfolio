@@ -6,7 +6,7 @@ import Sending from "./Sending"
 
 export default function Contact({ close }) {
   const [state, setState] = React.useState({})
-  const [messageSending, setMessageSending] = React.useState(true)
+  const [messageSending, setMessageSending] = React.useState(false)
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
