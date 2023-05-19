@@ -59,6 +59,23 @@ button[type="submit"]:active {
   top: 2px;
 }
 
+button[type="submit"]:disabled {
+  padding: 0.6rem;
+  background-color: #777;
+  color: #111;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-bottom: 2vh;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #555;
+  transition: all 0.4s ease 0s;
+  cursor: not-allowed;
+  pointer-events: none !important;
+}
+
 label {
   font-family: inherit;
   font-size: inherit;

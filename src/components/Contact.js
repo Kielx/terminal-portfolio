@@ -5,6 +5,10 @@ import "../styles/contact.scss"
 
 export default function Contact({ close }) {
   const [state, setState] = React.useState({})
+  const [
+    disableButtonWhenSendingContactForm,
+    setDisableButtonWhenSendingContactForm,
+  ] = React.useState(false)
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -12,13 +16,14 @@ export default function Contact({ close }) {
 
   const handleSubmit = e => {
     e.preventDefault()
+    setDisableButtonWhenSendingContactForm(true)
     const url = `/.netlify/functions/contact`
     fetch(url, {
       method: "POST",
       body: JSON.stringify(state),
     })
       .then(response =>
-        response.status === 200
+        setDisableButtonWhenSendingContactForm(false) && response.status === 200
           ? navigate("/success")
           : alert("An error occured while trying to send contact message!")
       )
@@ -80,7 +85,9 @@ export default function Contact({ close }) {
             rows="3"
             onChange={handleChange}
           ></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={disableButtonWhenSendingContactForm}>
+            Send
+          </button>
         </form>
       </div>
     </div>
