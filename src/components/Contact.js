@@ -22,11 +22,12 @@ export default function Contact({ close }) {
       method: "POST",
       body: JSON.stringify(state),
     })
-      .then(response =>
-        setDisableButtonWhenSendingContactForm(false) && response.status === 200
+      .then(response => {
+        setDisableButtonWhenSendingContactForm(false)
+        response.status === 200
           ? navigate("/success")
           : alert("An error occured while trying to send contact message!")
-      )
+      })
       .then(close)
   }
 
