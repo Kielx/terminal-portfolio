@@ -1,5 +1,6 @@
 ---
-slug: "projects/arduino-knight-rider"
+slug: "https://onet.pl"
+externalLink: true
 nameOfClass: "projects-items miniProjects"
 title: "Arduino Knight Rider"
 added: "2023-01-09"

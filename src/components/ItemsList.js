@@ -55,6 +55,7 @@ export default function ItemsList() {
               slug
               video
               added
+              externalLink
             }
             html
             fileAbsolutePath
@@ -158,7 +159,13 @@ export default function ItemsList() {
       <button
         className="popupWindowLinkButton"
         style={{ cursor: "pointer", width: "30%" }}
-        onClick={() => createWinboxInstance(item)}
+        onClick={() => {
+          if (!item.node.frontmatter.externalLink) {
+            createWinboxInstance(item)
+          } else {
+            window.location.href = item.node.frontmatter.slug
+          }
+        }}
       >
         {item.node.frontmatter.listName}
       </button>
