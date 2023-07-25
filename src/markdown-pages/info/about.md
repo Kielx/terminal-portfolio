@@ -35,7 +35,6 @@ techIcons: [
 
 ## Krzysztof Pantak
 
-Software Developer based in Kielce Poland 🇵🇱.<br>
-CS Sophomore at the Kielce University of Technology.<br>
-Passionate about Frontend, Backend, Cloud Technologies, and everything tech-related.<br>
-Also a Strength Coach and a family man.
+- 💡 Well-rounded software engineer with skills in several programming languages. Passionate about creating a variety of applications, looking at programming as a way to solve problems and new interesting challenges. Ready to take on new projects and collaborate on innovative solutions.
+- 👨‍🎓 Final-year CS Student at the Kielce University of Technology. 
+- ⚡ Creating applications in JavaScript, TypeScript, C, C++, Python and lately experimenting with C# and .Net. 
