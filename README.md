@@ -220,7 +220,12 @@ Distributed under MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Kielx.dev@gmail.com
+github@pantak.net
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Kielx/terminal-portfolio&type=Date)](https://star-history.com/#Kielx/terminal-portfolio&Date)
+
 <!-- MARK
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNzc5ODUwNjQ3XX0=
