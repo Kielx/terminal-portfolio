@@ -1,9 +1,9 @@
 {
-  "name": "kielx-portfolio",
+  "name": "terminal-quick-portfolio",
   "private": true,
-  "description": "Krzysztof Pantak software developer portfolio",
+  "description": "Utsav Moradiya software developer portfolio",
   "version": "0.1.0",
-  "author": "Krzysztof Pantak <kielx.dev@gmail.com>",
+  "author": "Utsav Moradiya <utsav.moradiya3@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
