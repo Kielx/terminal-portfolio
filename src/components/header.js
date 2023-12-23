@@ -16,15 +16,16 @@ const Header = ({ siteTitle }) => {
       <div style={{ display: "inline-flex" }}>
         <h1>{">"}</h1>
         <h1>
-          {isLoaded ? (
-            "-#- -#-"
-          ) : (
-            <Typewriter
-              style={{ marginTop: 0, paddingTop: 0 }}
-              options={{
-                deleteSpeed: "natural",
-              }}
-              onInit={typewriter => {
+        {isLoaded && false ? (
+        "Utsav Moradiya"
+      ) : (
+        <>
+          <Typewriter
+            style={{ marginTop: 0, paddingTop: 0, color: "white" }}
+            options={{
+              deleteSpeed: "natural",
+            }}
+            onInit={(typewriter) => {
                 typewriter
                   .typeString("Software Developer")
                   .pauseFor(2500)
@@ -32,14 +33,13 @@ const Header = ({ siteTitle }) => {
                   .typeString("Problem solver")
                   .pauseFor(2500)
                   .deleteAll()
-                  .typeString("-#- -#-")
-                  .callFunction(() => {
-                    setIsLoaded(true)
-                  })
-                  .start()
-              }}
-            />
-          )}
+                  .typeString("Utsav Moradiya")
+                  .start();
+              
+            }}
+          />
+        </>
+      )}
         </h1>
       </div>
     </header>

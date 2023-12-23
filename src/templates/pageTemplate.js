@@ -42,6 +42,7 @@ export const pageQuery = graphql`
         techIcons
         title
         video
+        Cloud
       }
     }
   }

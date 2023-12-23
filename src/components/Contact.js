@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect"
 import { navigate } from "gatsby-link"
 import "../styles/contact.scss"
 import Sending from "./Sending"
+import emailjs from 'emailjs-com';
 
 export default function Contact({ close }) {
   const [state, setState] = React.useState({})
@@ -13,20 +14,30 @@ export default function Contact({ close }) {
   }
 
   const handleSubmit = e => {
+
+
     e.preventDefault()
-    setMessageSending(true)
-    const url = `/.netlify/functions/contact`
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify(state),
-    })
-      .then(response => {
-        response.ok
-          ? navigate("/success")
-          : alert("An error occured while trying to send contact message!")
-        setMessageSending(false)
-      })
-      .then(close)
+      emailjs.send('service_cj7vl9v', 'template_hil9c96', state, '6t1QhvlcIZ9tNrJky')
+        .then((response) => {
+          console.log('Email sent:', response);
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+        });
+    
+    // setMessageSending(true)
+    // const url = `/.netlify/functions/contact`
+    // fetch(url, {
+    //   method: "POST",
+    //   body: JSON.stringify(state),
+    // })
+    //   .then(response => {
+    //     response.ok
+    //       ? navigate("/success")
+    //       : alert("An error occured while trying to send contact message!")
+    //     setMessageSending(false)
+    //   })
+    //   .then(close)
   }
 
   return (
@@ -47,7 +58,7 @@ export default function Contact({ close }) {
         <form
           name="contact"
           method="post"
-          action="/contact-us"
+          // action="/contact-us"
           onSubmit={handleSubmit}
         >
           <p hidden>
@@ -72,7 +83,7 @@ export default function Contact({ close }) {
             id="email"
             name="email"
             required={true}
-            placeholder="E-Mail adress"
+            placeholder="E-Mail address"
             onChange={handleChange}
           />
           <label htmlFor="message">Message</label>
@@ -80,13 +91,13 @@ export default function Contact({ close }) {
             id="message"
             name="message"
             required={true}
-            placeholder="Your message"
+            placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"
             rows="3"
             onChange={handleChange}
           ></textarea>
           {messageSending ? (
             <button type="submit" disabled={messageSending}>
-              <Sending />
+              {/* <Sending /> */}
             </button>
           ) : (
             <button type="submit" disabled={messageSending}>

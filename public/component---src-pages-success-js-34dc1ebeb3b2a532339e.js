@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkterminal_quick_portfolio=self.webpackChunkterminal_quick_portfolio||[]).push([[866],{9658:function(e,t,n){n.r(t),n.d(t,{default:function(){return s}});var c=n(7294),l=n(2413),a=n(6179),u=n(5604),r=n(9219);function s(){return c.createElement(l.Z,null,c.createElement(a.Z,{title:"Successfuly sent a message"}),c.createElement(r.Z,null),c.createElement("div",{className:"container"},c.createElement(u.Z,{text:"Successfully sent a contact message. Thank you!"})))}}}]);
+//# sourceMappingURL=component---src-pages-success-js-34dc1ebeb3b2a532339e.js.map

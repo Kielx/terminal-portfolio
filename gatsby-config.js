@@ -8,7 +8,7 @@ module.exports = {
     titleTemplate: `%s | Utsav Moradiya Portfolio`,
     description: `Terminal -command-line themed portfolio featuring projects ranging from robust Gatsby PWA's, React APPs and FullStack Web APPs utilizing cloud platforms to simple HTML, CSS and JavaScript sites.`,
     author: `@UtsavMoradiya`,
-    url: "https://pantak.net",
+    url: "https://utsavmoradiya.in",
     image: "/PortfolioSS-sm.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@Utavmoradiya3",
   },
@@ -41,6 +41,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown-pages/info`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages/skills`,
       },
     },
     {
