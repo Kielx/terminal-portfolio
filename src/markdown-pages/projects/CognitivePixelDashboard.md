@@ -8,7 +8,7 @@ video: "false"
 popupImageSrc: [
   "cp_ss1.png","cp_ss2.png"
   ]
-popupImageAlt: "cpDashboard screenshot"
+# popupImageAlt: "cpDashboard screenshot"
 popupLiveLink: "https://cognitivepixel.netlify.app/"
 # popupGithubLink: ""
 techIcons: [
@@ -38,5 +38,4 @@ CognitivePixel Dashboard is designed for a digital marketing company, currently 
 - **Data Processing:** Processes over 23,000 records every 2 minutes.
 - **Auto-Refresh:** Data is refreshed automatically every 2 minutes.
 
-### Contact for Demo
-For a demonstration of the CognitivePixel Dashboard, please get in touch. Note that external sign-ups are not allowed.
+Note that external sign-ups are not allowed.

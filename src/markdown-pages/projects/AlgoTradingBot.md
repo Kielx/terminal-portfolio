@@ -1,5 +1,5 @@
 ---
-slug: "projects/arihant-ecommerce"
+slug: "projects/algotradingbot"
 added: "2022-05-05"
 nameOfClass: "projects-items Projects"
 title: "Algo Trading Bot"

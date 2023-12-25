@@ -19,6 +19,9 @@ export default function Template({
           popupImageSrc={frontmatter.popupImageSrc}
           popupImageAlt={frontmatter.popupImageAlt}
           popupGithubLink={frontmatter.popupGithubLink}
+          popupHRLink={frontmatter.popupHRLink}
+          popupLCLink={frontmatter.popupLCLink}
+          popupLILink={frontmatter.popupLILink}
           popupLiveLink={frontmatter.popupLiveLink}
           techIcons={frontmatter.techIcons}
           html={html}
@@ -36,6 +39,9 @@ export const pageQuery = graphql`
         listName
         nameOfClass
         popupGithubLink
+        popupHRLink
+        popupLCLink
+        popupLILink
         popupImageAlt
         popupImageSrc
         popupLiveLink

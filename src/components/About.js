@@ -1,7 +1,7 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
 
 export default function PopupTerminalWindow({
@@ -90,10 +90,10 @@ export default function PopupTerminalWindow({
             </video>
           </div>
         )}
-
+1323
         {popupGithubLink || popupLiveLink ? (
           <div className="popupTerminalWindowLinkIcons">
-            {popupLiveLink ? (
+            {popupLiveLink ? (<>
               <a href={popupLiveLink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faLink}
@@ -101,11 +101,22 @@ export default function PopupTerminalWindow({
                   size="2x"
                 />
               </a>
+
+<a
+href={"https://www.linkedin.com/in/utsav-moradiya-445a371ab/"}
+target="_blank"
+rel="noopener noreferrer"
+>
+<FontAwesomeIcon
+  icon={faLinkedin}
+  className="popupTerminalWindowLinkIcon"
+  size="2x"
+/> </a></>
             ) : (
               ""
             )}
-            {popupGithubLink ? (
-              <a
+            {popupGithubLink ? (<>    
+               <a
                 href={popupGithubLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -116,6 +127,19 @@ export default function PopupTerminalWindow({
                   size="2x"
                 />
               </a>
+              <a
+                href={"https://www.linkedin.com/in/utsav-moradiya-445a371ab/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="popupTerminalWindowLinkIcon"
+                  size="2x"
+                />
+              </a>
+              </>
+       
             ) : (
               ""
             )}

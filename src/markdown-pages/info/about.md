@@ -8,10 +8,14 @@ popupImageSrc: [
   ]
 popupImageAlt: "Cartoon photo of myself"
 popupGithubLink: "https://github.com/Utsav-pixel"
+popupLILink: "https://www.linkedin.com/in/utsav-moradiya-445a371ab/"
+popupHRLink: "https://www.hackerrank.com/profile/morolla1357"
+popupLCLink: "https://leetcode.com/user6223Ob/"
 techIcons: [
         "python",
+        "django",
+        "react",
         "cplusplus", 
-        "createreactapp",
         "mongodb",
         "linux",
         "windowsterminal",

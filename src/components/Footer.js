@@ -5,6 +5,7 @@ import WinBox from "winbox/src/js/winbox"
 import Contact from "./Contact"
 import { Link } from "gatsby"
 
+
 const checkScreenWidthMobile = () => {
   if (typeof window !== `undefined`) {
     return window.screen.width < 1024 ? true : false
@@ -45,6 +46,30 @@ const desktopButton = (
 )
 
 const Footer = () => {
+
+  const onePageResumeLink = '/resume/Utsav_Python_EU.pdf';
+  const projectInDepthLink = '/resume/Utsav_Resume_Full.pdf';
+
+  const downloadFile = (fileUrl,FileName) => {
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.setAttribute('download', FileName);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
+    if (selectedValue === 'onePageResume') {
+      downloadFile(onePageResumeLink,"Utsav_Resume_OP");
+    } else if (selectedValue === 'projectInDepth') {
+      downloadFile(projectInDepthLink,"Utsav_Resume_InDept");
+    }
+  };
+
+
+
   return (
     <footer
       style={{ display: "flex", flexDirection: "column", margin: "auto" }}
@@ -64,6 +89,38 @@ const Footer = () => {
         >
           GitHub
         </a>
+        {" | "}
+        <a
+          href="https://www.linkedin.com/in/utsav-moradiya-445a371ab/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        {" | "}
+<a
+          href="https://www.linkedin.com/in/utsav-moradiya-445a371ab/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume:
+        </a>
+
+     
+         
+      <select id="resumeSelect"        
+        style={{
+          backgroundColor: 'transparent',
+          color: "#268bd2",
+          border: "1px solid #268bd2",
+        }}
+        
+        onChange={handleSelectChange}>
+        <option value=""  style={{ backgroundColor: 'transparent' }} >Select an option</option>
+        <option value="onePageResume">One-Page Resume</option>
+        <option value="projectInDepth">Project In Depth</option>
+      </select>
+
       </div>
       <span
         style={{

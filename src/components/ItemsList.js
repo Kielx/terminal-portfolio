@@ -71,6 +71,9 @@ export default function ItemsList() {
               listName
               nameOfClass
               popupGithubLink
+              popupHRLink
+              popupLCLink
+              popupLILink
               popupImageAlt
               popupImageSrc
               popupLiveLink
@@ -134,6 +137,9 @@ export default function ItemsList() {
         popupImageAlt: item.node.frontmatter.popupImageAlt,
         video: item.node.frontmatter.video,
         popupGithubLink: item.node.frontmatter.popupGithubLink,
+        popupHRLink: item.node.frontmatter.popupHRLink,
+        popupLCLink: item.node.frontmatter.popupLCLink,
+        popupLILink: item.node.frontmatter.popupLILink,
         popupLiveLink: item.node.frontmatter.popupLiveLink,
         techIcons: item.node.frontmatter.techIcons,
         Cloud: item.node.frontmatter.Cloud,
@@ -282,7 +288,8 @@ export default function ItemsList() {
     return (
       <>
         <li>→ Info:</li> {info} {skills} {contactItem} <li>→ Projects:</li>
-        {projects} <li className="miniProject">→ Mini-Projects:</li>
+        {projects}
+         {/* <li className="miniProject">→ Mini-Projects:</li> */}
       </>
     )
   }
@@ -304,7 +311,9 @@ export default function ItemsList() {
           </Link>
         </li>{" "}
         <li>→ Projects:</li>
-        {projectsMobile} <li className="miniProject">→ Mini-Projects:</li>
+        {projectsMobile} 
+        {/* {projects} */}
+        {/* <li className="miniProject">→ Mini-Projects:</li> */}
       </>
     )
   }

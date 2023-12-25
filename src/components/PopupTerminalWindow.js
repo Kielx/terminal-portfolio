@@ -1,8 +1,8 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faHackerrank, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faLaptopCode, faLink } from "@fortawesome/free-solid-svg-icons"
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -14,6 +14,9 @@ export default function PopupTerminalWindow({
   video,
   popupImageSrc,
   popupGithubLink,
+  popupHRLink,
+  popupLILink,
+  popupLCLink,
   popupLiveLink,
   techIcons,
   Cloud,
@@ -49,7 +52,20 @@ export default function PopupTerminalWindow({
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+        },
+      },
+      // Add more breakpoints as needed
+    ],
   };
+  console.log(popupLCLink)
   return (
     <>
       <div
@@ -113,7 +129,9 @@ export default function PopupTerminalWindow({
         ):null} */}
       {video === "false" && popupImageSrc?.length > 0 ? (
         <Slider {...settings}>
-          {popupImageSrc.map((image, index) => (
+          {popupImageSrc.map((image, index) =>{console.log(image)
+          return(
+            
             <div key={index} className="popupTerminalWindowImageContainer">
               {(link = popupLiveLink || popupGithubLink) ? (
                 <a href={link} target="_blank" rel="noopener noreferrer">
@@ -139,7 +157,7 @@ export default function PopupTerminalWindow({
                 ></img>
               )}
             </div>
-          ))}
+          )})}
         </Slider>
       ) : video != null  && video!=="false"? (
         <div className="popupTerminalWindowImageContainer">
@@ -158,7 +176,7 @@ export default function PopupTerminalWindow({
           </video>
         </div>
       ) : null}
-        {popupGithubLink || popupLiveLink ? (
+        {popupGithubLink || popupLiveLink || popupHRLink ? (
           <div className="popupTerminalWindowLinkIcons">
             {popupLiveLink ? (
               <a href={popupLiveLink} target="_blank" rel="noopener noreferrer">
@@ -182,6 +200,55 @@ export default function PopupTerminalWindow({
                   className="popupTerminalWindowLinkIcon"
                   size="2x"
                 />
+
+              </a>
+            ) : (
+              ""
+            )}
+
+{popupHRLink ? (
+              <a
+                href={popupHRLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faHackerrank}
+                  className="popupTerminalWindowLinkIcon"
+                  size="2x"
+                />
+              </a>
+            ) : (
+              ""
+            )}
+
+{popupLCLink ? (
+              <a
+                href={popupLCLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+      
+                <FontAwesomeIcon icon={faLaptopCode} className="popupTerminalWindowLinkIcon"
+                  size="2x" />
+                  {/* <FontAwesomeIcon icon="fa-solid fa-c" className="popupTerminalWindowLinkIcon"
+                    size="2x" /> */}
+              </a>
+            ) : (
+              ""
+            )}
+
+{popupLILink ? (
+              <a
+                href={popupLILink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+      
+                <FontAwesomeIcon icon={faLinkedin} className="popupTerminalWindowLinkIcon"
+                  size="2x" />
+                  {/* <FontAwesomeIcon icon="fa-solid fa-c" className="popupTerminalWindowLinkIcon"
+                    size="2x" /> */}
               </a>
             ) : (
               ""
