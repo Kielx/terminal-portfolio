@@ -24,6 +24,7 @@ export default function Template({
           popupLILink={frontmatter.popupLILink}
           popupLiveLink={frontmatter.popupLiveLink}
           techIcons={frontmatter.techIcons}
+          Cloud={frontmatter.Cloud}
           html={html}
         ></PopupTerminalWindow>
       </Layout>
@@ -46,9 +47,9 @@ export const pageQuery = graphql`
         popupImageSrc
         popupLiveLink
         techIcons
+        Cloud
         title
         video
-        Cloud
       }
     }
   }

@@ -65,7 +65,7 @@ export default function PopupTerminalWindow({
       // Add more breakpoints as needed
     ],
   };
-  console.log(popupLCLink)
+
   return (
     <>
       <div
@@ -269,8 +269,18 @@ export default function PopupTerminalWindow({
               <div className="popupTerminalWindowFooter">
                 <h4>Tech used:</h4>
                 <ul className="techItemsList">{techIcons}</ul>
-                {Cloud?.length!=0?<><h4>Cloud-Services used:</h4>
-                <ul className="techItemsList">{Cloud}</ul></>:null}
+              </div>
+            </>
+          ) : (
+            ""
+          )}
+
+{Cloud ? (
+            <>
+              <div className="break"></div>
+              <div className="popupTerminalWindowFooter">
+                <h4>Cloud-Services used:</h4>
+                <ul className="techItemsList">{Cloud}</ul>
               </div>
             </>
           ) : (
@@ -281,3 +291,4 @@ export default function PopupTerminalWindow({
     </>
   )
 }
+

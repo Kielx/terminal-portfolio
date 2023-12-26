@@ -195,7 +195,7 @@ Change typewriter `typeString` to your needs.
                   .typeString("Problem solver")
                   .pauseFor(2500)
                   .deleteAll()
-                  .typeString("Krzysztof Pantak")
+                  .typeString("Utsav Moradiya")
                   .callFunction(() => {
                     setIsLoaded(true)
                   })
@@ -220,7 +220,7 @@ Distributed under MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-github@pantak.net
+github@utsav-pixel
 
 ## Star History
 

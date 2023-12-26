@@ -24,6 +24,7 @@ export default function ItemsList() {
               popupImageSrc
               popupLiveLink
               techIcons
+              Cloud
               title
               slug
               video
@@ -98,6 +99,8 @@ export default function ItemsList() {
               listName
               nameOfClass
               title
+              slug
+
             }
             html
             fileAbsolutePath
