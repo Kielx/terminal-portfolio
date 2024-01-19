@@ -1,6 +1,6 @@
 ---
 slug: "projects/arihant-ecommerce"
-added: "2022-05-05"
+added: "2023-05-05"
 nameOfClass: "projects-items Projects"
 title: "Arihant Ecommerce"
 listName: "👨‍🔬 /Arihant-Ecommerce"
@@ -12,7 +12,7 @@ popupImageAlt: "Arihant Electronic screenshot"
 popupLiveLink: "https://www.arihantelect.com/"
 # popupGithubLink: ""
 techIcons: [
-  "python", "django", "react"
+  "python", "django", "react","mysql"
   ]
 Cloud: ["amazonaws", "amazonrds", "amazons3", "awsamplify"]
 ---

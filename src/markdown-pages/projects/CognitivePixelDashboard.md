@@ -1,6 +1,6 @@
 ---
 slug: "projects/cp-dashboard"
-added: "2022-05-05"
+added: "2023-05-05"
 nameOfClass: "projects-items Projects"
 title: "CognitivePixel Dashboard"
 listName: "👨‍⚕️ /cpDashboard"
@@ -12,7 +12,7 @@ popupImageSrc: [
 popupLiveLink: "https://cognitivepixel.netlify.app/"
 # popupGithubLink: ""
 techIcons: [
-        "python","django","react",
+        "python","django","react","postgresql"
       ]
 Cloud: [
         "amazonaws","amazonrds","amazons3","awsamplify"

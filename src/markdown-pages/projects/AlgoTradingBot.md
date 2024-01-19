@@ -1,6 +1,6 @@
 ---
 slug: "projects/algotradingbot"
-added: "2022-05-05"
+added: "2023-05-05"
 nameOfClass: "projects-items Projects"
 title: "Algo Trading Bot"
 listName: "👨‍🔬 /Algo-Trading-Bot"
@@ -10,7 +10,7 @@ popupImageSrc: []
 # popupLiveLink: "https://www.arihantelect.com/"
 # popupGithubLink: ""
 techIcons: [
-        "python","react",
+        "python","fastapi","react"
       ]
 Cloud: [
         # "amazonaws","amazonrds","amazons3","awsamplify"

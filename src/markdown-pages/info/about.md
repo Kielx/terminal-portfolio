@@ -14,6 +14,9 @@ popupLCLink: "https://leetcode.com/user6223Ob/"
 techIcons: [
         "python",
         "django",
+        "fastapi",
+        "flask",
+        "postgresql",
         "react",
         "cplusplus", 
         "mongodb",
@@ -31,12 +34,14 @@ Cloud: [
 
 ## Utsav Moradiya
 
-- 💡 Experienced Software Developer specializing in backend development and automation with a proven track record in creating and deploying scalable systems on the cloud. Possesses <u><b>over 3 years</b></u> of industry expertise, including microservices architecture and client management.Additionally, has over 1 year of experience as an Embedded Electronics Engineer in a startup, contributing to the development of IoT devices.
+- Once, a wise person said, <u><b>“Self introduction is not my culture.”</b></u>
+Work and character are enough to introduce a person. I share the same belief.
 #### Objective 💡
 - Utilize my effective problem-solving skills and technical ability to transform companies or businesses into commercial value. 🚀
-- Passionate about  <u><b>open source</b></u>, actively contributing to collaborative projects and fostering innovation within the developer community. 🌐
+- Passionate about  <u><b>open source</b></u>
 #### Education 🎓
-- 👨‍🎓 BTech in Electronics and communication at Parul University(NAAC A++). 
+- 👨‍🎓 BTech in Electronics and communication at Parul University(NAAC A++).
+
 
  <!-- Field for the projects
  TechnologyTag+icons

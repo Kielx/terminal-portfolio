@@ -2,7 +2,7 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faHackerrank, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faLaptopCode, faLink } from "@fortawesome/free-solid-svg-icons"
+import { faLaptopCode, faLink, faPhone ,faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -238,6 +238,8 @@ export default function PopupTerminalWindow({
               ""
             )}
 
+            
+
 {popupLILink ? (
               <a
                 href={popupLILink}
@@ -250,6 +252,30 @@ export default function PopupTerminalWindow({
                   {/* <FontAwesomeIcon icon="fa-solid fa-c" className="popupTerminalWindowLinkIcon"
                     size="2x" /> */}
               </a>
+            ) : (
+              ""
+            )}
+
+{popupLCLink ? (
+    <a
+    href="mailto:utsav.moradiya3@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FontAwesomeIcon icon={faEnvelope} className="popupTerminalWindowLinkIcon" size="2x" />
+  </a>
+            ) : (
+              ""
+            )}
+            
+            {popupLCLink ? (
+   <a
+   href="tel:+1234567890"  // Replace with the actual phone number
+   target="_blank"
+   rel="noopener noreferrer"
+ >
+   <FontAwesomeIcon icon={faPhone} className="popupTerminalWindowLinkIcon" size="2x" />
+ </a>
             ) : (
               ""
             )}

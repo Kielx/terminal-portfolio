@@ -1,6 +1,6 @@
 ---
 slug: "projects/ns-doc"
-added: "2022-05-05"
+added: "2023-05-05"
 nameOfClass: "projects-items Projects"
 title: "NSDoc"
 listName: "👨‍⚕️ /NsDoc"
@@ -12,7 +12,7 @@ popupImageAlt: "NsDoc screenshot"
 popupLiveLink: "https://www.nsdoc.in/"
 # popupGithubLink: ""
 techIcons: [
-        "python","django","react",
+        "python","django","react","mysql"
       ]
 Cloud: [
         "amazonaws","amazonrds","amazons3","awsamplify"
