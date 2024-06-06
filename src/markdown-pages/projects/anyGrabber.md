@@ -8,6 +8,7 @@ video: "false"
 popupImageSrc: "https://raw.githubusercontent.com/Kielx/anygrabber/master/assets_readme/screenshot1.png"
 popupImageAlt: "App screenshot"
 popupGithubLink: "https://github.com/Kielx/AnyGrabber"
+popupLiveLink: "https://anygrabber.pantak.net"
 techIcons: [
         "python",
       ]
