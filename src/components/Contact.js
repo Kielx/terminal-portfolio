@@ -48,7 +48,7 @@ export default function Contact({ close }) {
           name="contact"
           method="post"
           action="/contact-us"
-          onSubmit={handleSubmit}
+          netlify
         >
           <p hidden>
             <label>
