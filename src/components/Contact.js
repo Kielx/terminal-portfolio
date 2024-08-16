@@ -46,8 +46,6 @@ export default function Contact({ close }) {
         </h1>
         <form
           name="contact"
-          method="post"
-          action="/contact-us"
           netlify
         >
           <p hidden>
