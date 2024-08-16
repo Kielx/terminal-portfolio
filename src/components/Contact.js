@@ -44,7 +44,7 @@ export default function Contact({ close }) {
             }}
           />
         </h1>
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/contact-us">
             <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
