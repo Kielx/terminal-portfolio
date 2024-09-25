@@ -44,19 +44,14 @@ export default function Contact({ close }) {
             }}
           />
         </h1>
-        <form
-          name="contact"
-          method="post"
-          action="/contact-us"
-          onSubmit={handleSubmit}
-        >
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/contact-us">
+            <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
               Don’t fill this out:{" "}
               <input name="bot-field" onChange={handleChange} />
             </label>
           </p>
-          <input type="hidden" name="form-name" value="contact"></input>
           <label htmlFor="name">Your Name</label>
           <input
             type="text"
