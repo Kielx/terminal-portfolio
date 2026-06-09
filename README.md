@@ -1,4 +1,8 @@
-# 💻 Terminal Portfolio
+# 💻 Terminal Portfolio (Archived)
+
+> ⚠️ **Archived:** This project is no longer maintained because Gatsby's ecosystem has become difficult to maintain long-term for this project.
+> 
+> 🙏 Thank you to everyone who used, starred, forked, and enjoyed this project.
 
 Terminal Portfolio is as the name suggests a terminal-themed portfolio showcasing a bit about myself and my projects.
 It's lightning-fast featuring nearly perfect Lighthouse Scores and clean UI and good UX.
@@ -151,7 +155,7 @@ All colors should be self-explanatory except for:
 
 ### Gatsby config
 
-You should update file `/gatsby-config.js` to match your project. You should change `siteMetada` and `gatsby-plugin-manifest` where you should provide an icon for PWA that should be included in `src/images/your-image.jpg`. Finally be sure to change your GTAG in gatsby config - if you plan to use google analytics. Otherwise you are free to remove the plugin entireley by removing entry for `gatsby-plugin-google-gtag`
+You should update file `/gatsby-config.js` to match your project. You should change `siteMetada` and `gatsby-plugin-manifest` where you should provide an icon for PWA that should be included in `src/images/your-image.jpg`.
 
 ### Contact Form
 There are many services that you can use to run your contact form.
@@ -169,7 +173,6 @@ Also you will need to set them up in netlify if you plan to deploy to their host
 ```sh
 GATSBY_AWS_CONTACT_FORM_API_URL = 'Your AWS API form url' - this is the url of the form that will be used to send emails from the contact form.
 GATSBY_AWS_CONTACT_FORM_X_API_KEY = 'Your AWS API form key' - this is the key of the form that will be used to send emails from the contact form.
-GATSBY_GOOGLE_GTAG = 'Your Google GTAG' - this is the GTAG that will be used to track your site if you decide to use google analytics.
 NODE_VERSION = '14' - this is the node version that will be used to build your project. This variable is only needed when you are using netlify.
 ```
 

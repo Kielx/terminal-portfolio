@@ -50,15 +50,6 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages/projects`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          process.env.GATSBY_GOOGLE_GTAG, // Google Analytics / GA
-        ],
-      },
-    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-gatsby-cloud`,
